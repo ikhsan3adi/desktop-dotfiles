@@ -33,7 +33,7 @@ include ~/.config/sway/colors
 # font
 font pango:JetBrainsMono Nerd Font Propo 11
 # wallpaper
-output * bg ~/Pictures/wpp.png fill
+output * bg ~/Pictures/wallpaper.png fill
 
 # idle
 exec swayidle -w \
