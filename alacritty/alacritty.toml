@@ -1,0 +1,5 @@
+window = { opacity = 0.75 }
+
+font = { normal = { family = "JetBrainsMono Nerd Font Mono" } }
+
+terminal = { shell = "fish" }

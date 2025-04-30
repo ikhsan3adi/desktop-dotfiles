@@ -1,0 +1,7 @@
+set $fg0 "#c6d0f5"
+set $bg0 "#414559"
+set $fg1 "#b5bfe2"
+set $bg1 "#303446"
+set $fgurg "#303446"
+set $bgurg "#e78284"
+set $transparent "#00000000"
