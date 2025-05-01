@@ -37,7 +37,8 @@ ln -s $(pwd)/images/wallpaper.png ~/Pictures/wallpaper.png
 
 ### B. Using install script to use `alacritty`, `fish`, `oh-my-posh`, & `sway` configs
 
-> [!CAUTION] This may override your previous config!
+> [!CAUTION]
+> _**This may override your previous config!**_
 >
 > ```sh
 > chmod +x ./install.sh
