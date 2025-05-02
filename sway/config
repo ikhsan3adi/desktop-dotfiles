@@ -37,9 +37,9 @@ output * bg ~/Pictures/wallpaper.png fill
 
 # idle
 exec swayidle -w \
-        timeout 60 'light -O && light -S 0.00' resume 'light -I' \
-        timeout 300 "exec $lockS -f" \
-        timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+        timeout 180 'light -O && light -S 0.00' resume 'light -I' \
+        timeout 600 "exec $lockS -f" \
+        timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
         before-sleep "exec $lockS"
 
 # touchpad
@@ -63,7 +63,7 @@ bindsym $mod+$alt+e exec $filemgr
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+q kill
-bindsym $mod+Shift+e exec swaymsg exit
+bindsym $ctrl+$mod+$alt+Escape exec swaymsg exit
 
 # Move your focus around
 bindsym $mod+$left focus left
@@ -173,6 +173,8 @@ bindsym $ctrl+$mod+$alt+l exec $lockS
 bindsym $ctrl+$mod+$alt+s exec systemctl sleep
 # hibernate
 bindsym $ctrl+$mod+$alt+h exec systemctl hibernate
+# poweroff
+bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
 
 bar {
     position top
@@ -196,11 +198,11 @@ bar {
     }
 }
 
-#                                   border          background      text        indicator     child_border
-client.focused                      $fg0            $bg0            $fg0        $fg0          $fg0
-client.focused_inactive             $transparent    $bg180          $fg1        $fg1          $transparent
-client.unfocused                    $transparent    $transparent    $fg1        $fg1          $transparent
-client.urgent                       $fgurg          $bgurg          $fgurg      $fgurg        $fgurg
-client.placeholder                  $transparent    $bg180          $fg1        $fg1          $transparent
+#                               border          background      text        indicator     child_border
+client.focused                  $fg0            $bg0            $fg0        $fg0          $fg0
+client.focused_inactive         $transparent    $bg180          $fg1        $fg1          $transparent
+client.unfocused                $transparent    $transparent    $fg1        $fg1          $transparent
+client.urgent                   $fgurg          $bgurg          $fgurg      $fgurg        $fgurg
+client.placeholder              $transparent    $bg180          $fg1        $fg1          $transparent
 
 include /etc/sway/config.d/*
