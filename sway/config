@@ -173,6 +173,8 @@ bindsym $ctrl+$mod+$alt+l exec $lockS
 bindsym $ctrl+$mod+$alt+s exec systemctl sleep
 # hibernate
 bindsym $ctrl+$mod+$alt+h exec systemctl hibernate
+# reboot
+bindsym $ctrl+$mod+$alt+Shift+r exec reboot
 # poweroff
 bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
 
