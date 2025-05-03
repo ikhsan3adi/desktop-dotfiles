@@ -207,4 +207,10 @@ client.unfocused                $transparent    $transparent    $fg1        $fg1
 client.urgent                   $fgurg          $bgurg          $fgurg      $fgurg        $fgurg
 client.placeholder              $transparent    $bg180          $fg1        $fg1          $transparent
 
+workspace_layout tabbed
+
+gaps inner 8
+
+gaps top -6
+
 include /etc/sway/config.d/*
