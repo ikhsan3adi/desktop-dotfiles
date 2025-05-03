@@ -185,6 +185,8 @@ bar {
 
     separator_symbol " | "
 
+    gaps 0 8
+
     colors {
         background              $transparent
 
@@ -209,8 +211,11 @@ client.placeholder              $transparent    $bg180          $fg1        $fg1
 
 workspace_layout tabbed
 
-gaps inner 8
+default_border pixel 2
+default_floating_border pixel 2
+titlebar_border_thickness 2
 
-gaps top -6
+gaps inner 8
+gaps top -4
 
 include /etc/sway/config.d/*

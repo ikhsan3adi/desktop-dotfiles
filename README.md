@@ -1,8 +1,8 @@
 # [My](https://github.com/ikhsan3adi) UNIX Desktop's Dotfiles
 
-![Preview 1](preview_1.png)
-
 ![Preview](preview.png)
+
+![Preview 1](preview_1.png)
 
 My Simple Archlinux Desktop Config Files 🍚
 
