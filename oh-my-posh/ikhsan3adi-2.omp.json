@@ -1,40 +1,55 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "crust": "#232634",
+    "base": "#303446",
+    "surface-0": "#414559",
+    "surface-1": "#51576d",
+    "surface-2": "#626880",
+    "overlay-0": "#737994",
+    "text": "#c6d0f5",
+    "yellow": "#e5c890",
+    "red": "#e78284",
+    "rosewater": "#f2d5cf"
+  },
   "blocks": [
     {
       "alignment": "left",
       "segments": [
         {
-          "background": "#ea76cb",
-          "foreground": "#ffffff",
+          "background": "p:surface-0",
+          "foreground": "p:text",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b0",
           "style": "diamond",
           "type": "text",
-          "template": "<b>{{ if ne .Code 0 }}\uf421 {{ else }}{{if .Root }}＃{{ else }}＄{{ end }}{{ end }}</b>",
+          "template": "<b>{{ if ne .Code 0 }}！{{ else }}{{if .Root }}＃{{ else }}＄{{ end }}{{ end }}</b>",
           "background_templates": [
-            "{{ if ne .Code 0 }}#e64553{{ end }}"
+            "{{ if ne .Code 0 }}p:red{{ end }}"
+          ],
+          "foreground_templates": [
+            "{{ if ne .Code 0 }}p:crust{{ end }}"
           ]
         },
         {
-          "background": "#8839ef",
-          "foreground": "#ffffff",
+          "background": "p:surface-1",
+          "foreground": "p:text",
           "style": "diamond",
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
-          "template": " {{if .Root }}<b><#f9e2af>{{ .UserName }}</></b>{{else}}{{ .UserName }}{{end}}@{{ .HostName }} ",
+          "template": " {{if .Root }}<b><p:yellow>{{ .UserName }}</></b>{{else}}{{ .UserName }}{{end}}@{{ .HostName }} ",
           "type": "session"
         },
         {
-          "background": "#7287fd",
-          "foreground": "#ffffff",
+          "background": "p:surface-2",
+          "foreground": "p:text",
           "style": "diamond",
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
           "properties": {
             "folder_icon": "...",
             "folder_separator_icon": "\\",
-            "right_format": "<b><i><#f9e2af>%s</></i></b> ",
+            "right_format": "<b><i><p:yellow>%s</></i></b> ",
             "home_icon": "~ ",
             "style": "powerlevel",
             "max_width": 32
@@ -43,8 +58,8 @@
           "type": "path"
         },
         {
-          "background": "#179299",
-          "foreground": "#ffffff",
+          "background": "p:overlay-0",
+          "foreground": "p:rosewater",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
