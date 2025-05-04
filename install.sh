@@ -7,4 +7,4 @@ mkdir -p ~/Pictures/Screenshots
 
 ln -s $(pwd)/images/wallpaper.png ~/Pictures/wallpaper.png
 
-ln -s $(pwd)/fish ~/.config
+ln -s $(pwd)/fish/config.fish ~/.config/fish/config.fish
