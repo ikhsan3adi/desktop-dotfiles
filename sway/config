@@ -209,8 +209,6 @@ client.unfocused                $transparent    $transparent    $fg1        $fg1
 client.urgent                   $fgurg          $bgurg          $fgurg      $fgurg        $fgurg
 client.placeholder              $transparent    $bg180          $fg1        $fg1          $transparent
 
-workspace_layout tabbed
-
 default_border pixel 2
 default_floating_border pixel 2
 titlebar_border_thickness 2

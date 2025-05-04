@@ -30,8 +30,8 @@
   },
   "extensions.autoUpdate": false,
   "update.mode": "manual",
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
   "git.enableSmartCommit": true,
   "editor.renderWhitespace": "none",
   "dart.debugExternalPackageLibraries": false,
@@ -207,7 +207,6 @@
   "terminal.external.windowsExec": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.21.3231.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe",
   "workbench.editorAssociations": {
     "*.dat": "default",
-    "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
     "*.md": "default"
   },
   "C_Cpp.debugShortcut": false,
@@ -312,8 +311,8 @@
   "cmake.showOptionsMovedNotification": false,
   "telemetry.feedback.enabled": false,
   "git-graph.maxDepthOfRepoSearch": 2,
-  "workbench.preferredLightColorTheme": "Catppuccin Mocha",
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "better-comments.highlightPlainText": true,
   "editor.fontSize": 16,
-  "editor.formatOnSave": false
+  "editor.formatOnSave": true
 }
