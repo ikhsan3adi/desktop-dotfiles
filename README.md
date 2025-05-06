@@ -16,6 +16,7 @@ My Simple Archlinux Desktop Config Files 🍚
 | Brightness          | [light](https://gitlab.com/dpeukert/light)                                                                                                         |
 | Audio               | [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)                                                                                |
 | Clipboard           | [wl-clipboard](https://github.com/bugaevc/wl-clipboard)                                                                                            |
+| Notification        | [mako](https://github.com/emersion/mako)                                                                                                           |
 | Screenshot          | [grim](https://gitlab.freedesktop.org/emersion/grim) \w [slurp](https://github.com/emersion/slurp)                                                 |
 | Terminal            | [Alacritty](https://github.com/alacritty/alacritty)                                                                                                |
 | Shell               | [Fish](https://fishshell.com/)                                                                                                                     |
