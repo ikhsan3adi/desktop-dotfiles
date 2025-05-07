@@ -163,7 +163,7 @@ bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@
 bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
 
 # restore saved brightness
-exec light -O
+exec light -I
 
 # adjust brightness via light
 bindsym --locked XF86MonBrightnessDown exec light -U 2.00 && light -O
