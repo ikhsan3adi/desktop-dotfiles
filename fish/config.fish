@@ -8,7 +8,7 @@ end
 export PATH="$PATH:$HOME/.local/bin"
 
 abbr --add c clear
-abbr --add ff fastfetch
+abbr --add ff fastfetch -c neofetch
 
 if test "$TERM" != linux
     oh-my-posh init fish --config ~/.config/oh-my-posh/ikhsan3adi-2.omp.json | source
