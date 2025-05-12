@@ -1,0 +1,37 @@
+# mako configuration file
+
+font=JetBrainsMono Nerd Font Propo 11
+
+width=400
+
+height=150
+
+border-size=1
+
+margin=0,0,10,0
+
+outer-margin=0,16,16,0
+
+max-visible=7
+
+layer=overlay
+
+anchor=bottom-right
+
+[urgency=low]
+text-color=#b5bfe2
+border-color=#b5bfe2
+background-color=#303446c0
+default-timeout=15000
+
+[urgency=normal]
+text-color=#c6d0f5
+border-color=#c6d0f5
+background-color=#414559c0
+default-timeout=30000
+
+[urgency=high]
+text-color=#303446
+border-color=#303446
+background-color=#e78284ee
+default-timeout=0

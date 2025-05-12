@@ -1,6 +1,7 @@
 ln -s $(pwd)/alacritty ~/.config
 ln -s $(pwd)/sway ~/.config
 ln -s $(pwd)/oh-my-posh ~/.config
+ln -s $(pwd)/mako ~/.config
 
 mkdir -p ~/Pictures
 mkdir -p ~/Pictures/Screenshots

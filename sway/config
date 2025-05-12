@@ -51,7 +51,7 @@ input "1739:33525:SYNA308D:00_06CB:82F5_Touchpad" {
 }
 
 # notification
-exec mako
+exec mako -c ~/.config/mako/config
 
 ### keybindings
 
