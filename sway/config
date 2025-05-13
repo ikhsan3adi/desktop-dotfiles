@@ -178,7 +178,7 @@ bindsym $ctrl+$mod+$alt+l exec $lockS
 # sleep
 bindsym $ctrl+$mod+$alt+s exec systemctl sleep
 # hibernate
-bindsym $ctrl+$mod+$alt+h exec systemctl hibernate
+bindsym $ctrl+$mod+$alt+Shift+h exec systemctl hibernate
 # reboot
 bindsym $ctrl+$mod+$alt+Shift+r exec reboot
 # poweroff
