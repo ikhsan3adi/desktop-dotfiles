@@ -14,7 +14,7 @@ swaylock \
   \
   --indicator-idle-visible \
   --indicator-radius 200 \
-  --indicator-thickness 1 \
+  --indicator-thickness 2 \
   \
   --separator-color $transparent \
   \

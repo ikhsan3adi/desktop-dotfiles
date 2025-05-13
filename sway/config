@@ -31,7 +31,7 @@ include ~/.config/sway/colors
 ### configs
 
 # font
-font pango:JetBrainsMono Nerd Font Propo 10
+font pango:JetBrainsMono Nerd Font Propo Bold 10
 # wallpaper
 output * bg ~/Pictures/wallpaper.png fill
 
@@ -188,11 +188,11 @@ bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
 exec_always waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
 
 #                               border          background      text        indicator     child_border
-client.focused                  $fg0            $bg0            $fg0        $fg0          $fg0
-client.focused_inactive         $transparent    $bg1c5          $fg1        $fg1          $transparent
-client.unfocused                $transparent    $bg1c5          $fg1        $fg1          $transparent
-client.urgent                   $fgurg          $bgurg          $fgurg      $fgurg        $fgurg
-client.placeholder              $transparent    $bg1c5          $fg1        $fg1          $transparent
+client.focused                  $accent         $accent         $bg1        $fg0          $accent
+client.focused_inactive         $accentc5       $accentc5       $bg1        $fg1          $accentc5
+client.unfocused                $fg0c5          $bg1            $fg1        $fg1          $transparent
+client.urgent                   $fgurg          $bgurg          $fgurg      $fg0          $accent
+client.placeholder              $fg0c5          $bg1            $fg1        $fg1          $transparent
 
 default_border pixel 2
 default_floating_border pixel 2

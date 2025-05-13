@@ -31,6 +31,7 @@ My Simple Archlinux Desktop Config Files 🍚
 | Cursor              | [Bibata](https://github.com/ful1e5/Bibata_Cursor)                                                                                                  |
 | Font                | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)                                                                                |
 | Color Palette       | (Mostly) [Catppuccin Frappé](https://catppuccin.com/palette/)                                                                                      |
+| Wallpaper           | <https://wallhaven.cc/w/6ljyd6>                                                                                                                    |
 
 ## Install
 
@@ -49,7 +50,7 @@ ln -s $(pwd)/images/wallpaper.png ~/Pictures/wallpaper.png
 # other configs aswell ...
 ```
 
-### B. Using install script to use `alacritty`, `fish`, `oh-my-posh`, & `sway` configs
+### B. Using install script to use `alacritty`, `fish`, `oh-my-posh`, `sway` & other configs
 
 > [!CAUTION]
 > _**This may override your previous config!**_

@@ -26,20 +26,6 @@ tooltip label {
   color: @text;
 }
 
-button {
-  box-shadow: inset 0 -3px transparent;
-  border: none;
-}
-
-button:hover {
-  background: inherit;
-  box-shadow: inset 0 -3px @text;
-}
-
-#workspaces {
-  margin: 0;
-}
-
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;
 }
@@ -48,36 +34,138 @@ button:hover {
   margin-right: 0;
 }
 
+/* modules-left */
+.modules-left > widget > * {
+  border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
+}
+
+.modules-left > widget:last-child > * {
+  border-right: 2px solid @text;
+}
+
+.modules-left > widget > *:hover {
+  border-top: 2px solid @teal;
+  border-bottom: 2px solid @teal;
+}
+
+.modules-left > widget:last-child > *:hover {
+  border-right: 2px solid @teal;
+}
+
+/* modules-center */
+.modules-center > widget > * {
+  border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
+}
+
+.modules-center > widget:first-child > * {
+  border-left: 2px solid @text;
+}
+
+.modules-center > widget:last-child > * {
+  border-right: 2px solid @text;
+}
+
+.modules-center > widget > *:hover {
+  border-top: 2px solid @teal;
+  border-bottom: 2px solid @teal;
+}
+
+.modules-center > widget:first-child > *:hover {
+  border-left: 2px solid @teal;
+}
+
+.modules-center > widget:last-child > *:hover {
+  border-right: 2px solid @teal;
+}
+
+/* modules-right */
+.modules-right > widget > * {
+  border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
+}
+
+.modules-right > widget:first-child > * {
+  border-left: 2px solid @text;
+}
+
+.modules-right > widget:last-child > * {
+  border-right: 2px solid @text;
+}
+
+.modules-right > widget > *:hover {
+  border-top: 2px solid @teal;
+  border-bottom: 2px solid @teal;
+}
+
+.modules-right > widget:first-child > *:hover {
+  border-left: 2px solid @teal;
+}
+
+.modules-right > widget:last-child > *:hover {
+  border-right: 2px solid @teal;
+}
+
+#workspaces {
+  margin: 0;
+  border: 0;
+}
+
 #workspaces button {
   padding: 0 0;
   background-color: @base;
   color: @text;
+  border-top: 2px solid @text;
 }
 
 #workspaces button:hover {
-  box-shadow: inherit;
-  text-shadow: inherit;
   background-color: @surface0;
+  border-top: 2px solid @teal;
+  color: @teal;
+  font-weight: 700;
 }
 
 #workspaces button.focused {
   background-color: @surface1;
   box-shadow: inset 0 -2px @teal;
+  border-top: 2px solid @teal;
   color: @teal;
   font-weight: 900;
 }
 
 #workspaces button.urgent {
   background-color: @red;
+  border-top: 2px solid @base;
   color: @base;
   font-weight: 700;
+}
+
+#workspaces button.focused.urgent {
+  font-weight: 900;
+  box-shadow: inset 0 -2px @base;
+}
+
+#workspaces button:first-child {
+  border-left: 2px solid @text;
+}
+
+#workspaces button:first-child:hover {
+  border-left: 2px solid @teal;
+}
+
+#workspaces button:first-child.focused {
+  border-left: 2px solid @teal;
 }
 
 #tray {
   background-color: @surface0;
   color: @text;
   font-weight: 900;
-  border-bottom: 2px solid @text;
+}
+
+#tray:hover {
+  color: @teal;
 }
 
 #tray > .passive {
@@ -115,21 +203,11 @@ button:hover {
 #mpris {
   background-color: @base;
   color: @text;
-  border-bottom: 2px solid @text;
 }
 
-.modules-left {
-  border-top: 2px solid @text;
-  border-right: 2px solid @text;
-  border-left: 2px solid @text;
-}
-
-.modules-center {
-  border: 2px solid @text;
-}
-
-.modules-right {
-  border: 2px solid @text;
+#mpris:hover {
+  background-color: @surface0;
+  color: @teal;
 }
 
 #mpris,
