@@ -11,8 +11,9 @@ My Simple Archlinux Desktop Config Files 🍚
 |                     | App/Program Used                                                                                                                                   |
 | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Window Manager      | [Sway](https://swaywm.org/)                                                                                                                        |
-| Launcher            | [wmenu](https://github.com/dixonwille/wmenu)                                                                                                       |
+| Launcher            | [wmenu](https://codeberg.org/adnano/wmenu)                                                                                                         |
 | Lockscreen          | [swaylock-effects](https://github.com/mortie/swaylock-effects)                                                                                     |
+| Status Bar          | [waybar](https://github.com/Alexays/Waybar)                                                                                                        |
 | Brightness          | [light](https://gitlab.com/dpeukert/light)                                                                                                         |
 | Audio               | [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)                                                                                |
 | Clipboard           | [wl-clipboard](https://github.com/bugaevc/wl-clipboard)                                                                                            |

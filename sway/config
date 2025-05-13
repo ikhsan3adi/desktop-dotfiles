@@ -31,7 +31,7 @@ include ~/.config/sway/colors
 ### configs
 
 # font
-font pango:JetBrainsMono Nerd Font Propo 11
+font pango:JetBrainsMono Nerd Font Propo 10
 # wallpaper
 output * bg ~/Pictures/wallpaper.png fill
 
@@ -91,27 +91,27 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # Switch to workspace
-bindsym $mod+1 workspace "I"
-bindsym $mod+2 workspace "II"
-bindsym $mod+3 workspace "III"
-bindsym $mod+4 workspace "IV"
-bindsym $mod+5 workspace "V"
-bindsym $mod+6 workspace "VI"
-bindsym $mod+7 workspace "VII"
-bindsym $mod+8 workspace "VIII"
-bindsym $mod+9 workspace "IX"
-bindsym $mod+0 workspace "X"
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
 # Move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace "I"
-bindsym $mod+Shift+2 move container to workspace "II"
-bindsym $mod+Shift+3 move container to workspace "III"
-bindsym $mod+Shift+4 move container to workspace "IV"
-bindsym $mod+Shift+5 move container to workspace "V"
-bindsym $mod+Shift+6 move container to workspace "VI"
-bindsym $mod+Shift+7 move container to workspace "VII"
-bindsym $mod+Shift+8 move container to workspace "VIII"
-bindsym $mod+Shift+9 move container to workspace "IX"
-bindsym $mod+Shift+0 move container to workspace "X"
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
 
 # split
 bindsym $mod+b splith
@@ -184,29 +184,8 @@ bindsym $ctrl+$mod+$alt+Shift+r exec reboot
 # poweroff
 bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
 
-bar {
-    position top
-
-    status_command $statusS
-
-    separator_symbol " | "
-
-    gaps 0 8
-
-    colors {
-        background              $bg1c5
-
-        statusline              $fg0
-        separator               $fg0
-
-        #                       border          background      text
-        active_workspace        $fg1            $bg1c5          $fg1
-        focused_workspace       $fg0            $bg0            $fg0
-        inactive_workspace      $transparent    $bg1c5          $fg1
-        urgent_workspace        $fgurg          $bgurg          $fgurg
-        binding_mode            $fgurg          $bgurg          $fgurg
-    }
-}
+# waybar
+exec_always waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
 
 #                               border          background      text        indicator     child_border
 client.focused                  $fg0            $bg0            $fg0        $fg0          $fg0
