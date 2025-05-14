@@ -1,8 +1,10 @@
 # [My](https://github.com/ikhsan3adi) UNIX Desktop's Dotfiles
 
-| ![Preview](preview.png)     | ![Preview 1](preview_1.png) |
-| --------------------------- | --------------------------- |
-| ![Preview 2](preview_2.png) | ![Preview 3](preview_3.png) |
+![Preview](preview.png)
+
+| ![Floating](preview_1.png) | ![Bar](preview_2.png)    |
+| -------------------------- | ------------------------ |
+| ![Tiling](preview_3.png)   | ![Tabbed](preview_4.png) |
 
 My Simple Archlinux Desktop Config Files 🍚
 

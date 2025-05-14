@@ -10,7 +10,8 @@
     "text": "#c6d0f5",
     "yellow": "#e5c890",
     "red": "#e78284",
-    "rosewater": "#f2d5cf"
+    "rosewater": "#f2d5cf",
+    "teal": "#81c8be"
   },
   "blocks": [
     {
@@ -37,7 +38,7 @@
           "style": "diamond",
           "leading_diamond": "<transparent,background>\ue0b0</>",
           "trailing_diamond": "\ue0b0",
-          "template": " {{if .Root }}<b><p:yellow>{{ .UserName }}</></b>{{else}}{{ .UserName }}{{end}}@{{ .HostName }} ",
+          "template": " {{if .Root }}<b><p:red>{{ .UserName }}</></b>{{else}}{{ .UserName }}{{end}}@<b><p:teal>{{ .HostName }}</></b> ",
           "type": "session"
         },
         {
@@ -49,7 +50,7 @@
           "properties": {
             "folder_icon": "...",
             "folder_separator_icon": "\\",
-            "right_format": "<b><i><p:yellow>%s</></i></b> ",
+            "right_format": "<b><i><p:teal>%s</></i></b> ",
             "home_icon": "~ ",
             "style": "powerlevel",
             "max_width": 32

@@ -117,6 +117,8 @@ tooltip label {
   background-color: @base;
   color: @text;
   border-top: 2px solid @text;
+  box-shadow: inherit;
+  text-shadow: inherit;
 }
 
 #workspaces button:hover {
@@ -156,6 +158,10 @@ tooltip label {
 
 #workspaces button:first-child.focused {
   border-left: 2px solid @teal;
+}
+
+#workspaces button:first-child.urgent {
+  border-left: 2px solid @base;
 }
 
 #tray {
