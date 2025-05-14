@@ -31,7 +31,7 @@ My Simple Archlinux Desktop Config Files 🍚
 | GTK theme           | [Catppuccin Frappé GTK](https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md)                                                                 |
 | Folders Icon        | [Catppuccin Frappé Papirus Folders](https://github.com/catppuccin/papirus-folders)                                                                 |
 | Cursor              | [Bibata](https://github.com/ful1e5/Bibata_Cursor)                                                                                                  |
-| Font                | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads)                                                                                |
+| Font                | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads), [Font Awesome](https://archlinux.org/packages/extra/any/otf-font-awesome/)    |
 | Color Palette       | (Mostly) [Catppuccin Frappé](https://catppuccin.com/palette/)                                                                                      |
 | Wallpaper           | <https://wallhaven.cc/w/6ljyd6>                                                                                                                    |
 
