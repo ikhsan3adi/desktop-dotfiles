@@ -26,15 +26,16 @@ tooltip label {
   color: @text;
 }
 
+#workspaces {
+  margin: 0;
+  border: 0;
+}
+
+/* modules-left */
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;
 }
 
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
-}
-
-/* modules-left */
 .modules-left > widget > * {
   border-top: 2px solid @text;
   border-bottom: 2px solid @text;
@@ -51,6 +52,22 @@ tooltip label {
 
 .modules-left > widget:last-child > *:hover {
   border-right: 2px solid @teal;
+}
+
+.modules-left > widget:last-child > #workspaces button:last-child {
+  border-right: 2px solid @text;
+}
+
+.modules-left > widget:last-child > #workspaces button:last-child:hover {
+  border-right: 2px solid @teal;
+}
+
+.modules-left > widget:last-child > #workspaces button:last-child.focused {
+  border-right: 2px solid @teal;
+}
+
+.modules-left > widget:last-child > #workspaces button:last-child.urgent {
+  border-right: 2px solid @base;
 }
 
 /* modules-center */
@@ -81,6 +98,10 @@ tooltip label {
 }
 
 /* modules-right */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
 .modules-right > widget > * {
   border-top: 2px solid @text;
   border-bottom: 2px solid @text;
@@ -105,11 +126,6 @@ tooltip label {
 
 .modules-right > widget:last-child > *:hover {
   border-right: 2px solid @teal;
-}
-
-#workspaces {
-  margin: 0;
-  border: 0;
 }
 
 #workspaces button {
