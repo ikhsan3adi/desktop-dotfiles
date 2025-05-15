@@ -194,6 +194,8 @@ client.unfocused                $fg0c5          $bg1            $fg1        $fg1
 client.urgent                   $fgurg          $bgurg          $fgurg      $fg0          $accent
 client.placeholder              $fg0c5          $bg1            $fg1        $fg1          $transparent
 
+for_window [class="VSCodium"] opacity 0.9
+
 default_border pixel 2
 default_floating_border pixel 2
 titlebar_border_thickness 2
