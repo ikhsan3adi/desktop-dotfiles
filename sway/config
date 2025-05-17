@@ -203,4 +203,9 @@ titlebar_border_thickness 2
 gaps inner 8
 gaps top -4
 
+# specific apps window settings
+for_window [class="VSCodium"] opacity 0.9
+for_window [class="GitHub Desktop"] opacity 0.9
+for_window [app_id="thunar"] opacity 0.9
+
 include /etc/sway/config.d/*
