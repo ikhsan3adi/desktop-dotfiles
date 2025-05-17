@@ -26,12 +26,12 @@ default-timeout=15000
 
 [urgency=normal]
 text-color=#c6d0f5
-border-color=#c6d0f5
+border-color=#81c8be
 background-color=#414559c0
 default-timeout=30000
 
 [urgency=high]
 text-color=#303446
-border-color=#303446
+border-color=#e78284
 background-color=#e78284ee
 default-timeout=0
