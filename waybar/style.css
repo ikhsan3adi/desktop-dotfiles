@@ -46,12 +46,12 @@ tooltip label {
 }
 
 .modules-left > widget > *:hover {
-  border-top: 2px solid @teal;
-  border-bottom: 2px solid @teal;
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
 }
 
 .modules-left > widget:last-child > *:hover {
-  border-right: 2px solid @teal;
+  border-right: 2px solid @accent;
 }
 
 .modules-left > widget:last-child > #workspaces button:last-child {
@@ -59,11 +59,11 @@ tooltip label {
 }
 
 .modules-left > widget:last-child > #workspaces button:last-child:hover {
-  border-right: 2px solid @teal;
+  border-right: 2px solid @accent;
 }
 
 .modules-left > widget:last-child > #workspaces button:last-child.focused {
-  border-right: 2px solid @teal;
+  border-right: 2px solid @accent;
 }
 
 .modules-left > widget:last-child > #workspaces button:last-child.urgent {
@@ -85,16 +85,16 @@ tooltip label {
 }
 
 .modules-center > widget > *:hover {
-  border-top: 2px solid @teal;
-  border-bottom: 2px solid @teal;
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
 }
 
 .modules-center > widget:first-child > *:hover {
-  border-left: 2px solid @teal;
+  border-left: 2px solid @accent;
 }
 
 .modules-center > widget:last-child > *:hover {
-  border-right: 2px solid @teal;
+  border-right: 2px solid @accent;
 }
 
 /* modules-right */
@@ -116,16 +116,16 @@ tooltip label {
 }
 
 .modules-right > widget > *:hover {
-  border-top: 2px solid @teal;
-  border-bottom: 2px solid @teal;
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
 }
 
 .modules-right > widget:first-child > *:hover {
-  border-left: 2px solid @teal;
+  border-left: 2px solid @accent;
 }
 
 .modules-right > widget:last-child > *:hover {
-  border-right: 2px solid @teal;
+  border-right: 2px solid @accent;
 }
 
 #workspaces button {
@@ -133,35 +133,41 @@ tooltip label {
   background-color: @base;
   color: @text;
   border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
   box-shadow: inherit;
   text-shadow: inherit;
 }
 
 #workspaces button:hover {
   background-color: @surface0;
-  border-top: 2px solid @teal;
-  color: @teal;
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
+  color: @accent;
   font-weight: 700;
 }
 
 #workspaces button.focused {
-  background-color: @surface1;
-  box-shadow: inset 0 -2px @teal;
-  border-top: 2px solid @teal;
-  color: @teal;
+  background-color: @accent;
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
+  color: @base;
   font-weight: 900;
 }
 
 #workspaces button.urgent {
   background-color: @red;
-  border-top: 2px solid @base;
+  border-top: 2px solid @red;
+  border-bottom: 2px solid @red;
   color: @base;
   font-weight: 700;
 }
 
 #workspaces button.focused.urgent {
   font-weight: 900;
-  box-shadow: inset 0 -2px @base;
+  background-color: @maroon;
+  border-top: 2px solid @maroon;
+  border-bottom: 2px solid @maroon;
+  color: @mantle;
 }
 
 #workspaces button:first-child {
@@ -169,11 +175,11 @@ tooltip label {
 }
 
 #workspaces button:first-child:hover {
-  border-left: 2px solid @teal;
+  border-left: 2px solid @accent;
 }
 
 #workspaces button:first-child.focused {
-  border-left: 2px solid @teal;
+  border-left: 2px solid @accent;
 }
 
 #workspaces button:first-child.urgent {
@@ -187,7 +193,7 @@ tooltip label {
 }
 
 #tray:hover {
-  color: @teal;
+  color: @accent;
 }
 
 #tray > .passive {
@@ -218,7 +224,6 @@ tooltip label {
 
 #mode {
   background-color: @base;
-  box-shadow: inset 0 -2px @text;
   border-bottom: 2px solid @text;
 }
 
@@ -229,7 +234,7 @@ tooltip label {
 
 #mpris:hover {
   background-color: @surface0;
-  color: @teal;
+  color: @accent;
 }
 
 #mpris,
