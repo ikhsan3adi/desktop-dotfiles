@@ -18,11 +18,11 @@ swaylock \
   \
   --separator-color $transparent \
   \
-  --text-color $fg0 \
-  --text-clear-color $fg0 \
-  --text-caps-lock-color $fg1 \
-  --text-ver-color $fg1 \
-  --text-wrong-color $bgurg \
+  --text-color $text \
+  --text-clear-color $text \
+  --text-caps-lock-color $subtext1 \
+  --text-ver-color $subtext1 \
+  --text-wrong-color $red \
   \
   --inside-color $transparent \
   --inside-clear-color $transparent \
@@ -30,10 +30,10 @@ swaylock \
   --inside-ver-color $transparent \
   --inside-wrong-color $transparent \
   \
-  --key-hl-color $fg0 \
-  --bs-hl-color $bgurg \
-  --caps-lock-key-hl-color $fg0 \
-  --caps-lock-bs-hl-color $bgurg \
+  --key-hl-color $text \
+  --bs-hl-color $red \
+  --caps-lock-key-hl-color $text \
+  --caps-lock-bs-hl-color $red \
   \
   --line-color $transparent \
   --line-clear-color $transparent \

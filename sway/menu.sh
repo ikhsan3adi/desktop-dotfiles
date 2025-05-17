@@ -4,9 +4,9 @@ wmenu-run \
   -i \
   -p Search: \
   -f "JetBrainsMono Nerd Font Propo 14" \
-  -N $bg1 \
-  -n $fg1 \
+  -N $base \
+  -n $subtext1 \
   -M $transparent \
   -m $accent \
-  -S $bg0 \
+  -S $surface0 \
   -s $accent

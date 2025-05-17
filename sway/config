@@ -1,5 +1,7 @@
 # ikhsan3adi's config for sway
 
+include ~/.config/sway/colors
+
 ### Variables
 
 set $mod Mod4
@@ -25,8 +27,6 @@ set $lockS ~/.config/sway/lock.sh
 set $screenshotS ~/.config/sway/screenshot.sh
 set $menuS ~/.config/sway/menu.sh
 set $statusS ~/.config/sway/status.sh
-
-include ~/.config/sway/colors
 
 ### configs
 
@@ -187,14 +187,12 @@ bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
 # waybar
 exec_always waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
 
-#                               border          background      text        indicator     child_border
-client.focused                  $accent         $accent         $bg1        $fg0          $accent
-client.focused_inactive         $accentc5       $accentc5       $bg1        $fg1          $accentc5
-client.unfocused                $fg0c5          $bg1            $fg1        $fg1          $transparent
-client.urgent                   $fgurg          $bgurg          $fgurg      $fg0          $accent
-client.placeholder              $fg0c5          $bg1            $fg1        $fg1          $transparent
-
-for_window [class="VSCodium"] opacity 0.9
+#                               border          background      text         indicator     child_border
+client.focused                  $accent         $accent         $base        $text         $accent
+client.focused_inactive         $accentc5       $accentc5       $base        $subtext1     $accentc5
+client.unfocused                $textc5         $base           $subtext1    $subtext1     $transparent
+client.urgent                   $red            $red            $base        $red          $red
+client.placeholder              $textc5         $base           $subtext1    $subtext1     $transparent
 
 default_border pixel 2
 default_floating_border pixel 2
