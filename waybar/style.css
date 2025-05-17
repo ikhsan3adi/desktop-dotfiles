@@ -67,7 +67,7 @@ tooltip label {
 }
 
 .modules-left > widget:last-child > #workspaces button:last-child.urgent {
-  border-right: 2px solid @base;
+  border-right: 2px solid @red;
 }
 
 /* modules-center */
@@ -183,7 +183,7 @@ tooltip label {
 }
 
 #workspaces button:first-child.urgent {
-  border-left: 2px solid @base;
+  border-left: 2px solid @red;
 }
 
 #tray {
