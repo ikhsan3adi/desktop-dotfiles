@@ -2,10 +2,6 @@
 
 ![Preview](preview.png)
 
-| ![Floating](preview_1.png) | ![Bar](preview_2.png)    |
-| -------------------------- | ------------------------ |
-| ![Tiling](preview_3.png)   | ![Tabbed](preview_4.png) |
-
 My Simple Archlinux Desktop Config Files 🍚
 
 > _Applicable to other distros beside Archlinux aswell_
