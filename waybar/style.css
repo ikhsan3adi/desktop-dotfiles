@@ -31,6 +31,11 @@ tooltip label {
   border: 0;
 }
 
+#tray {
+  margin: 0;
+  border: 0;
+}
+
 /* modules-left */
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;
@@ -68,6 +73,14 @@ tooltip label {
 
 .modules-left > widget:last-child > #workspaces button:last-child.urgent {
   border-right: 2px solid @red;
+}
+
+.modules-left > widget:last-child > #tray widget:last-child {
+  border-right: 2px solid @text;
+}
+
+.modules-left > widget:last-child > #tray widget:last-child:hover {
+  border-right: 2px solid @accent;
 }
 
 /* modules-center */
@@ -186,14 +199,34 @@ tooltip label {
   border-left: 2px solid @red;
 }
 
-#tray {
-  background-color: @surface0;
+#tray > widget {
+  border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
+  background-color: @base;
   color: @text;
+  font-weight: 700;
+}
+
+#tray > widget:hover {
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
+  background-color: @surface0;
+  color: @accent;
   font-weight: 900;
 }
 
-#tray:hover {
-  color: @accent;
+#tray > widget > image {
+  padding: 0px 4px;
+}
+
+#tray widget:first-child image {
+  padding-left: 7px;
+  padding-right: 4px;
+}
+
+#tray widget:last-child image {
+  padding-left: 4px;
+  padding-right: 7px;
 }
 
 #tray > .passive {
@@ -202,7 +235,6 @@ tooltip label {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: @red;
 }
 
 /* #taskbar button.active {
@@ -235,6 +267,7 @@ tooltip label {
 #mpris:hover {
   background-color: @surface0;
   color: @accent;
+  font-weight: 900;
 }
 
 #mpris,
@@ -253,8 +286,7 @@ tooltip label {
 #custom-kernel,
 #idle_inhibitor,
 #scratchpad,
-#mode,
-#tray {
+#mode {
   padding: 0px 8px;
   margin: 0px 0px;
   color: @text;
@@ -306,12 +338,12 @@ tooltip label {
 
 #clock {
   background-color: @base;
-  color: @teal;
+  color: @text;
 }
 
 #clock:hover {
   background-color: @surface0;
-  color: @sapphire;
+  color: @accent;
 }
 
 #cpu {
