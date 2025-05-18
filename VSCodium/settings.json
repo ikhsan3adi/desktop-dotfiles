@@ -5,7 +5,7 @@
   "problems.showCurrentInStatus": true,
   "editor.wordWrap": "on",
   "editor.fontLigatures": "true",
-  "editor.fontFamily": "\"JetBrainsMono Nerd Font Mono\", \"JetBrains Mono\", monospace",
+  "editor.fontFamily": "\"JetBrainsMono Nerd Font Mono\", \"Font Awesome\", monospace",
   "editor.linkedEditing": true,
   "explorer.confirmDragAndDrop": false,
   "liveServer.settings.CustomBrowser": "microsoft-edge",
@@ -127,7 +127,7 @@
   },
   "openapi.platformConformanceScanRuntime": "docker",
   "openapi.platformConformanceScanImage": "42crunch/scand-agent:v2.0.0",
-  "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "native",
   "window.autoDetectColorScheme": true,
   "javascript.preferences.importModuleSpecifier": "relative",
   "js/ts.implicitProjectConfig.module": "ES2022",
@@ -182,7 +182,6 @@
   "application.shellEnvironmentResolutionTimeout": 60,
   "Devdb.colorTheme": "dark",
   "intelephense.runtime": "node",
-  "window.customTitleBarVisibility": "auto",
   "dart.flutterSdkPath": "D:\\sdk\\flutter",
   "codeium.enableConfig": {
     "*": true,
@@ -203,7 +202,6 @@
   "window.zoomLevel": 0.97531,
   "database-client.telemetry.usesOnlineServices": false,
   "intelephense.environment.phpVersion": "8.3.10",
-  "window.commandCenter": false,
   "terminal.external.windowsExec": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.21.3231.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe",
   "workbench.editorAssociations": {
     "*.dat": "default",
@@ -265,15 +263,16 @@
   "github.copilot.editor.enableAutoCompletions": false,
   "supermaven.otherWarning": false,
   "terminal.integrated.enableImages": true,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
   "terminal.integrated.minimumContrastRatio": 1,
   "bloc.checkForUpdates": false,
   "bloc.newCubitTemplate.createDirectory": false,
   "supermaven.enable": {
-    "*": true,
+    "*": false,
     "dart": true,
     "markdown": true,
-    "c": true
+    "c": true,
+    "json": true
   },
   "makefile.configureOnOpen": true,
   "C_Cpp.default.configurationProvider": "$(default)",
@@ -305,14 +304,20 @@
       "terminal.ansiBlack": "base"
     }
   },
-  "catppuccin.extraBordersEnabled": true,
   "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
   "workbench.iconTheme": "catppuccin-frappe",
   "cmake.showOptionsMovedNotification": false,
   "telemetry.feedback.enabled": false,
   "git-graph.maxDepthOfRepoSearch": 2,
-  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredLightColorTheme": "Catppuccin Mocha",
   "better-comments.highlightPlainText": true,
   "editor.fontSize": 16,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "window.menuBarVisibility": "toggle",
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "catppuccin.extraBordersEnabled": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 15000
 }
