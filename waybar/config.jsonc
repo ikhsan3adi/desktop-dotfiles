@@ -65,10 +65,10 @@
     },
     "mpris": {
         "interval": 1,
-        "format": "{player_icon} [{length}]  {dynamic}",
-        "format-playing": "{player_icon} [{length}] {dynamic}",
-        "format-paused": "{status_icon} [{length}] <i>{dynamic}</i>",
-        "format-stopped": "{status_icon} <i>{dynamic}</i>",
+        "format": "{player_icon} [{length}] {dynamic}",
+        "format-playing": "{player_icon} [{position}/{length}] {dynamic}",
+        "format-paused": "{status_icon} [{position}/{length}] <i>{dynamic}</i>",
+        "format-stopped": "{status_icon} [{length}] <i>{dynamic}</i>",
         "dynamic-order": [
             "artist",
             "title"
