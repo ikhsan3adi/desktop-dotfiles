@@ -12,6 +12,7 @@ My Simple Archlinux Desktop Config Files 🍚
 | Launcher            | [wmenu](https://codeberg.org/adnano/wmenu)                                                                                                         |
 | Lockscreen          | [swaylock-effects](https://github.com/mortie/swaylock-effects)                                                                                     |
 | Status Bar          | [waybar](https://github.com/Alexays/Waybar)                                                                                                        |
+| Network             | [networkmanager](https://archlinux.org/packages/?name=networkmanager)                                                                              |
 | Brightness          | [light](https://gitlab.com/dpeukert/light)                                                                                                         |
 | Audio               | [pulseaudio](https://www.freedesktop.org/wiki/Software/PulseAudio/)                                                                                |
 | Clipboard           | [wl-clipboard](https://github.com/bugaevc/wl-clipboard)                                                                                            |

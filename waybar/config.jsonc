@@ -146,7 +146,8 @@
         "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr}  ",
         "format-linked": "(No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "on-click": "alacritty --command nmtui-connect"
+        "on-click": "exec ~/.config/waybar/togglewifi.sh",
+        "on-click-right": "alacritty --command nmtui-connect"
     },
     "custom/weather": {
         "interval": 300,
