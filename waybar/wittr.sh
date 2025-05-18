@@ -1,16 +1,13 @@
 #!/bin/sh
 
-for i in {1..5}
-do
+for i in {1..5}; do
     text=$(curl -s "https://wttr.in/$1?format=%t++%h+H")
-    if [ $? -eq 0 ]
-    then
+    if [ $? -eq 0 ]; then
         tooltip=$(curl -s "https://wttr.in/$1?format=%l:+%C+%c\rTemperature:+%t\rHumidity:+%h")
-        if [ $? -eq 0 ]
-        then
+        if [ $? -eq 0 ]; then
             # extract temperature value
             temperature=$(echo "$text" | grep -oE '[+-]?[0-9]+' | head -n 1)
-            # remove leading + sign if its + 
+            # remove leading + sign if its +
             if [ "${temperature:0:1}" = "+" ]; then
                 temperature=${temperature#?}
             fi

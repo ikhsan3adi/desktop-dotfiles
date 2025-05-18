@@ -1,26 +1,26 @@
 cpu_usage() {
-    read -r cpu user nice system idle iowait irq softirq steal guest guest_nice < /proc/stat
+  read -r cpu user nice system idle iowait irq softirq steal guest guest_nice </proc/stat
 
-    total_now=$((user + nice + system + idle + iowait + irq + softirq + steal))
-    idle_now=$((idle + iowait))
+  total_now=$((user + nice + system + idle + iowait + irq + softirq + steal))
+  idle_now=$((idle + iowait))
 
-    if [[ -f /tmp/cpu_prev_stat ]]; then
-        read -r total_prev idle_prev < /tmp/cpu_prev_stat
-        diff_total=$((total_now - total_prev))
-        diff_idle=$((idle_now - idle_prev))
+  if [[ -f /tmp/cpu_prev_stat ]]; then
+    read -r total_prev idle_prev </tmp/cpu_prev_stat
+    diff_total=$((total_now - total_prev))
+    diff_idle=$((idle_now - idle_prev))
 
-        if [ "$diff_total" -ne 0 ]; then
-            usage=$((100 * (diff_total - diff_idle) / diff_total))
-        else
-            usage=0
-        fi
+    if [ "$diff_total" -ne 0 ]; then
+      usage=$((100 * (diff_total - diff_idle) / diff_total))
     else
-        usage=0
+      usage=0
     fi
+  else
+    usage=0
+  fi
 
-    echo "$total_now $idle_now" > /tmp/cpu_prev_stat
+  echo "$total_now $idle_now" >/tmp/cpu_prev_stat
 
-    echo "${usage}%"
+  echo "${usage}%"
 }
 
 while true; do
