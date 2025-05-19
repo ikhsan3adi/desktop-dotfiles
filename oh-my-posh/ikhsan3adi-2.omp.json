@@ -37,7 +37,6 @@
           "background": "p:accent",
           "foreground": "p:base",
           "leading_diamond": "\ue0b2",
-          "trailing_diamond": "<background,p:base>\ue0b0</>",
           "style": "diamond",
           "type": "text",
           "template": " <b>{{ if ne .Code 0 }}!{{ else }}{{if .Root }}#{{ else }}${{ end }}{{ end }}</b> ",
@@ -51,18 +50,16 @@
         {
           "background": "p:surface0",
           "foreground": "p:text",
-          "style": "diamond",
-          "leading_diamond": "<p:base,background>\ue0b0</>",
-          "trailing_diamond": "<background,p:base>\ue0b0</>",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
           "template": " {{if .Root }}<b><p:red>{{ .UserName }}</></b>{{else}}{{ .UserName }}{{end}}@<b><p:accent>{{ .HostName }}</></b> ",
           "type": "session"
         },
         {
           "background": "p:surface1",
           "foreground": "p:text",
-          "style": "diamond",
-          "leading_diamond": "<p:base,background>\ue0b0</>",
-          "trailing_diamond": "\ue0b0",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
           "properties": {
             "folder_icon": "...",
             "folder_separator_icon": "/",
