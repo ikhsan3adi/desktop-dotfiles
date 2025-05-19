@@ -62,7 +62,7 @@
           "foreground": "p:text",
           "style": "diamond",
           "leading_diamond": "<p:base,background>\ue0b0</>",
-          "trailing_diamond": "<background,p:base>\ue0b0</>",
+          "trailing_diamond": "\ue0b0",
           "properties": {
             "folder_icon": "...",
             "folder_separator_icon": "/",
