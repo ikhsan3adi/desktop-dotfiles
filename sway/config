@@ -27,6 +27,8 @@ set $lockS ~/.config/sway/lock.sh
 set $screenshotS ~/.config/sway/screenshot.sh
 set $menuS ~/.config/sway/menu.sh
 set $statusS ~/.config/sway/status.sh
+set $waybarS waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
+set $makoS mako -c ~/.config/mako/config
 
 ### configs
 
@@ -51,7 +53,7 @@ input "1739:33525:SYNA308D:00_06CB:82F5_Touchpad" {
 }
 
 # notification
-exec mako -c ~/.config/mako/config
+exec $makoS
 
 ### keybindings
 
@@ -185,7 +187,7 @@ bindsym $ctrl+$mod+$alt+Shift+r exec reboot
 bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
 
 # waybar
-exec_always waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
+exec_always $waybarS
 
 #                               border          background      text         indicator     child_border
 client.focused                  $accent         $accent         $base        $text         $accent
