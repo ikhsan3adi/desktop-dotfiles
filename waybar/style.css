@@ -349,36 +349,33 @@ tooltip label {
 #cpu {
   background-color: @base;
   color: @sapphire;
-  min-width: 45px;
+  min-width: 42px;
 }
 
 #cpu.normal {
   background-color: @base;
   color: @text;
-  min-width: 45px;
 }
 
 #cpu.warning {
   background-color: @base;
   color: @yellow;
-  min-width: 45px;
 }
 
 #cpu.critical {
   background-color: @base;
   color: @red;
-  min-width: 45px;
 }
 
 #cpu:hover {
   background-color: @surface0;
   color: @mauve;
-  min-width: 45px;
 }
 
 #memory {
   background-color: @base;
   color: @sapphire;
+  min-width: 47px;
 }
 
 #memory.normal {
@@ -440,6 +437,11 @@ tooltip label {
 #network {
   background-color: @base;
   color: @sapphire;
+}
+
+#network.disabled {
+  background-color: @base;
+  color: @subtext0;
 }
 
 #network.disconnected {

@@ -35,4 +35,4 @@ for i in {1..5}; do
     fi
     sleep 2
 done
-echo "{\"text\":\"\", \"tooltip\":\"error\"}"
+echo "{\"text\":\"wttr: N/A\", \"tooltip\":\"Weather report: not found\", \"class\":\"hot\"}"

@@ -22,12 +22,12 @@
         // "disk#ssd",
         // "temperature",
         // "privacy",
-        "cpu",
-        "memory",
-        "bluetooth",
         "network",
+        "bluetooth",
         "pulseaudio",
         "custom/weather",
+        "cpu",
+        "memory",
         "battery"
     ],
     "sway/workspaces": {
@@ -139,12 +139,12 @@
     "network": {
         "interval": 2,
         "interface-ethernet": "enp1s*",
-        "interface-wifi": "wlan0",
-        "format": "{essid} ({signalStrength}%)",
-        "format-ethernet": "eth ",
-        "format-wifi": "{essid} ({signalStrength}%)  ",
-        "format-linked": "(No IP) ",
+        "interface-wifi": "wlp2s*",
+        "format": "Connecting...",
         "format-disconnected": "Disconnected ⚠",
+        "format-ethernet": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes}  eth",
+        "format-wifi": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes}   {essid} ({signalStrength}%)",
+        "format-linked": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes}  (No IP)",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr}  ",
         "on-click": "exec ~/.config/waybar/togglewifi.sh",
@@ -152,7 +152,7 @@
     },
     "custom/weather": {
         "interval": 300,
-        "exec": "~/.config/waybar/wittr.sh Bandung",
+        "exec": "~/.config/waybar/wttr.sh Bandung",
         "return-type": "json",
         "format": "{}",
         "tooltip": true
@@ -163,8 +163,8 @@
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": "  {icon} {format_source}",
         "format-muted": "  {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": " ",
+        "format-source": "{volume}%  ",
+        "format-source-muted": "  ",
         "format-icons": {
             "headphone": " ",
             "hands-free": " ",
