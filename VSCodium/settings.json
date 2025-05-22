@@ -320,4 +320,5 @@
   "catppuccin.extraBordersEnabled": true,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 15000
+  "debug.console.fontFamily": "\"JetBrainsMono Nerd Font Mono\", default"
 }
