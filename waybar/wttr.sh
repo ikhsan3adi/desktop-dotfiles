@@ -1,9 +1,14 @@
 #!/bin/sh
 
+# latitude,longitude
+latlng="-4.018425024221436,120.78071864110255"
+# url encoded
+location="Sulawesi,%20Indonesia"
+
 for i in {1..5}; do
-    text=$(curl -s "https://wttr.in/$1?format=%t++%h+H")
+    text=$(curl -s "https://wttr.in/$latlng?format=%t++%h+H")
     if [ $? -eq 0 ]; then
-        tooltip=$(curl -s "https://wttr.in/$1?format=%l:+%C+%c\rTemperature:+%t\rHumidity:+%h")
+        tooltip=$(curl -s "https://wttr.in/$latlng?format=$location:+%C+%c\rTemperature:+%t\rHumidity:+%h")
         if [ $? -eq 0 ]; then
             # extract temperature value
             temperature=$(echo "$text" | grep -oE '[+-]?[0-9]+' | head -n 1)

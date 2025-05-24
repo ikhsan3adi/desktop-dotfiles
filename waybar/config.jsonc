@@ -155,7 +155,7 @@
     },
     "custom/weather": {
         "interval": 300,
-        "exec": "~/.config/waybar/wttr.sh Bandung",
+        "exec": "~/.config/waybar/wttr.sh",
         "return-type": "json",
         "format": "{}",
         "tooltip": true
