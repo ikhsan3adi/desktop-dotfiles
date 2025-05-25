@@ -1,3 +1,4 @@
+ln -s $(pwd)/fastfetch ~/.config
 ln -s $(pwd)/alacritty ~/.config
 ln -s $(pwd)/sway ~/.config
 ln -s $(pwd)/oh-my-posh ~/.config
