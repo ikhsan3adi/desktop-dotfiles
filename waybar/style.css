@@ -256,7 +256,6 @@ tooltip label {
 
 #mode {
   background-color: @base;
-  border-bottom: 2px solid @text;
 }
 
 #mpris {
