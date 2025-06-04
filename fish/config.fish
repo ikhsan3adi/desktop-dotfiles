@@ -7,6 +7,14 @@ end
 
 export PATH="$PATH:$HOME/.local/bin"
 
+export ANDROID_HOME="/opt/android-sdk"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+
+export JAVA_HOME="/usr/lib/jvm/default"
+
+export CHROME_EXECUTABLE="/sbin/thorium-browser"
+
 abbr --add c clear
 abbr --add ff fastfetch
 
