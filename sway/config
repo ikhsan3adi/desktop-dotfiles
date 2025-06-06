@@ -37,6 +37,9 @@ font pango:JetBrainsMono Nerd Font Propo Bold 10
 # wallpaper
 output * bg ~/Pictures/wallpaper.png fill
 
+# waybar
+exec $waybarS
+
 # idle
 exec swayidle -w \
         timeout 180 'light -O && light -S 0.00' resume 'light -I' \
@@ -185,9 +188,6 @@ bindsym $ctrl+$mod+$alt+Shift+h exec systemctl hibernate
 bindsym $ctrl+$mod+$alt+Shift+r exec reboot
 # poweroff
 bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
-
-# waybar
-exec_always $waybarS
 
 #                               border          background      text         indicator     child_border
 client.focused                  $accent         $accent         $base        $text         $accent

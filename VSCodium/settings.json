@@ -59,7 +59,7 @@
     "editor.accessibilityPageSize",
     "editor.lineHeight"
   ],
-  "editor.fontWeight": "300",
+  "editor.fontWeight": "500",
   "githubIssues.queries": [
     {
       "label": "My Issues",
@@ -321,4 +321,5 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 15000
   "debug.console.fontFamily": "\"JetBrainsMono Nerd Font Mono\", default"
+  "debug.console.fontFamily": "\"JetBrainsMono Nerd Font Mono\", default",
 }
