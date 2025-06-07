@@ -548,10 +548,8 @@ tooltip label {
 }
 
 #idle_inhibitor.activated {
-  background-color: @text;
+  background-color: @accent;
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
   color: @base;
-}
-
-#idle_inhibitor.activated:hover {
-  background-color: @subtext1;
 }

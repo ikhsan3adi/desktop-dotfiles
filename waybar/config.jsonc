@@ -7,8 +7,9 @@
     "reload_style_on_change": true,
     "modules-left": [
         "sway/workspaces",
-        "tray",
+        "idle_inhibitor",
         "sway/mode",
+        "tray",
         "mpris"
     ],
     "modules-center": [
@@ -17,7 +18,6 @@
     ],
     "modules-right": [
         // "sway/scratchpad",
-        // "idle_inhibitor",
         // "custom/kernel",
         // "disk#ssd",
         // "temperature",
@@ -93,7 +93,7 @@
     "clock": {
         "interval": 1,
         "timezone": "Asia/Jakarta",
-        "format": " {:%A %d %b %Y %H:%M:%S}  ",
+        "format": " {:%a %d %b %Y %H:%M:%S}  ",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
