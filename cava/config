@@ -8,17 +8,17 @@
 ; mode = normal
 
 # Accepts only non-negative values.
-; framerate = 60
+framerate = 60
 
 # 'autosens' will attempt to decrease sensitivity if the bars peak. 1 = on, 0 = off
 # new as of 0.6.0 autosens of low values (dynamic range)
 # 'overshoot' allows bars to overshoot (in % of terminal height) without initiating autosens. DEPRECATED as of 0.6.0
-; autosens = 1
+autosens = 0
 ; overshoot = 20
 
 # Manual sensitivity in %. If autosens is enabled, this will only be the initial value.
 # 200 means double height. Accepts only non-negative values.
-; sensitivity = 100
+sensitivity = 167
 
 # The number of bars (0-512). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
@@ -80,9 +80,9 @@
 # README.md contains further information on how to setup CAVA for JACK.
 #
 method = pulse
-# source = auto
+source = auto
 # mic
-source = alsa_input.pci-0000_04_00.6.analog-stereo
+; source = alsa_input.pci-0000_04_00.6.analog-stereo
 
 ; method = pipewire
 ; source = auto
@@ -197,7 +197,7 @@ mono_option = average
 # enable synchronized sync. 1 = on, 0 = off
 # removes flickering in alacritty terminal emulator.
 # defaults to off since the behaviour in other terminal emulators is unknown
-; synchronized_sync = 0
+synchronized_sync = 1
 
 # Shaders for sdl_glsl, located in $HOME/.config/cava/shaders
 ; vertex_shader = pass_through.vert
@@ -250,26 +250,26 @@ mono_option = average
 # Percentage value for integral smoothing. Takes values from 0 - 100.
 # Higher values means smoother, but less precise. 0 to disable.
 # DEPRECATED as of 0.8.0, use noise_reduction instead
-; integral = 77
+integral = 40
 
 # Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
-; monstercat = 0
-; waves = 0
+monstercat = 1
+waves = 0
 
 # Set gravity percentage for "drop off". Higher values means bars will drop faster.
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
 # DEPRECATED as of 0.8.0, use noise_reduction instead
-; gravity = 100
+gravity = 300
 
 
 # In bar height, bars that would have been lower that this will not be drawn.
 # DEPRECATED as of 0.8.0
-; ignore = 0
+ignore = 10000
 
 # Noise reduction, int 0 - 100. default 77
 # the raw visualization is very noisy, this factor adjusts the integral and gravity filters to keep the signal smooth
 # 100 will be very slow and smooth, 0 will be fast but noisy.
-; noise_reduction = 77
+noise_reduction = 30
 
 
 [eq]
@@ -277,8 +277,13 @@ mono_option = average
 # This one is tricky. You can have as much keys as you want.
 # Remember to uncomment more than one key! More keys = more precision.
 # Look at readme.md on github for further explanations and examples.
-; 1 = 1 # bass
-; 2 = 1
-; 3 = 1 # midtone
-; 4 = 1
-; 5 = 1 # treble
+1 = 1.1
+2 = 2
+3 = 1.3
+4 = 1.2
+5 = 1.2
+6 = 1.2
+7 = 1
+8 = 0.8
+9 = 0.6
+10 = 0.5
