@@ -138,7 +138,9 @@
   "typescript.preferences.importModuleSpecifier": "relative",
   "dart.renameFilesWithClasses": "prompt",
   "dart.flutterHotReloadOnSave": "manualIfDirty",
-  "dart.env": {},
+  "dart.env": {
+    "CHROME_EXECUTABLE": "thorium-browser",
+  },
   "workbench.tree.indent": 12,
   "[handlebars]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -260,7 +262,7 @@
   },
   "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
   "explorer.confirmPasteNative": false,
-  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.editor.enableAutoCompletions": true,
   "supermaven.otherWarning": false,
   "terminal.integrated.enableImages": true,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
@@ -312,14 +314,22 @@
   "workbench.preferredLightColorTheme": "Catppuccin Mocha",
   "better-comments.highlightPlainText": true,
   "editor.fontSize": 16,
-  "editor.formatOnSave": true,
   "terminal.integrated.fontLigatures.enabled": true,
   "window.menuBarVisibility": "toggle",
   "workbench.navigationControl.enabled": false,
   "window.commandCenter": false,
   "catppuccin.extraBordersEnabled": true,
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 15000
-  "debug.console.fontFamily": "\"JetBrainsMono Nerd Font Mono\", default"
+  "files.autoSaveDelay": 15000,
+  "window.customTitleBarVisibility": "never",
   "debug.console.fontFamily": "\"JetBrainsMono Nerd Font Mono\", default",
+  "terminal.external.linuxExec": "alacritty",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontWeight": "500"
 }
