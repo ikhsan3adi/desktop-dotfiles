@@ -9,7 +9,9 @@
 }
 
 window#waybar {
-  background-color: transparent;
+  background-color: @base;
+  /* border-top: 2px solid @text; */
+  border-bottom: 2px solid @text;
   color: @text;
 }
 
@@ -42,17 +44,18 @@ tooltip label {
 }
 
 .modules-left > widget > * {
-  border-top: 2px solid @text;
+  /* border-top: 2px solid @text; */
   border-bottom: 2px solid @text;
 }
 
-.modules-left > widget:last-child > * {
-  border-right: 2px solid @text;
+.modules-left > widget > *:hover {
+  /* border-top: 2px solid @accent; */
+  border-bottom: 2px solid @accent;
 }
 
-.modules-left > widget > *:hover {
-  border-top: 2px solid @accent;
-  border-bottom: 2px solid @accent;
+/*
+.modules-left > widget:last-child > * {
+  border-right: 2px solid @text;
 }
 
 .modules-left > widget:last-child > *:hover {
@@ -81,14 +84,20 @@ tooltip label {
 
 .modules-left > widget:last-child > #tray widget:last-child:hover {
   border-right: 2px solid @accent;
-}
+} */
 
 /* modules-center */
 .modules-center > widget > * {
-  border-top: 2px solid @text;
+  /* border-top: 2px solid @text; */
   border-bottom: 2px solid @text;
 }
 
+.modules-center > widget > *:hover {
+  /* border-top: 2px solid @accent; */
+  border-bottom: 2px solid @accent;
+}
+
+/* 
 .modules-center > widget:first-child > * {
   border-left: 2px solid @text;
 }
@@ -97,18 +106,13 @@ tooltip label {
   border-right: 2px solid @text;
 }
 
-.modules-center > widget > *:hover {
-  border-top: 2px solid @accent;
-  border-bottom: 2px solid @accent;
-}
-
 .modules-center > widget:first-child > *:hover {
   border-left: 2px solid @accent;
 }
 
 .modules-center > widget:last-child > *:hover {
   border-right: 2px solid @accent;
-}
+} */
 
 /* modules-right */
 .modules-right > widget:last-child > #workspaces {
@@ -116,25 +120,26 @@ tooltip label {
 }
 
 .modules-right > widget > * {
-  border-top: 2px solid @text;
+  /* border-top: 2px solid @text; */
   border-bottom: 2px solid @text;
 }
 
+/* 
 .modules-right > widget:first-child > * {
   border-left: 2px solid @text;
 }
+
+.modules-right > widget:first-child > *:hover {
+  border-left: 2px solid @accent;
+} */
 
 .modules-right > widget:last-child > * {
   border-right: 2px solid @text;
 }
 
 .modules-right > widget > *:hover {
-  border-top: 2px solid @accent;
+  /* border-top: 2px solid @accent; */
   border-bottom: 2px solid @accent;
-}
-
-.modules-right > widget:first-child > *:hover {
-  border-left: 2px solid @accent;
 }
 
 .modules-right > widget:last-child > *:hover {
@@ -145,7 +150,7 @@ tooltip label {
   padding: 0 0;
   background-color: @base;
   color: @text;
-  border-top: 2px solid @text;
+  /* border-top: 2px solid @text; */
   border-bottom: 2px solid @text;
   box-shadow: inherit;
   text-shadow: inherit;
@@ -153,7 +158,7 @@ tooltip label {
 
 #workspaces button:hover {
   background-color: @surface0;
-  border-top: 2px solid @accent;
+  /* border-top: 2px solid @accent; */
   border-bottom: 2px solid @accent;
   color: @accent;
   font-weight: 700;
@@ -161,7 +166,7 @@ tooltip label {
 
 #workspaces button.focused {
   background-color: @accent;
-  border-top: 2px solid @accent;
+  /* border-top: 2px solid @accent; */
   border-bottom: 2px solid @accent;
   color: @base;
   font-weight: 900;
@@ -169,7 +174,7 @@ tooltip label {
 
 #workspaces button.urgent {
   background-color: @red;
-  border-top: 2px solid @red;
+  /* border-top: 2px solid @red; */
   border-bottom: 2px solid @red;
   color: @base;
   font-weight: 700;
@@ -178,7 +183,7 @@ tooltip label {
 #workspaces button.focused.urgent {
   font-weight: 900;
   background-color: @maroon;
-  border-top: 2px solid @maroon;
+  /* border-top: 2px solid @maroon; */
   border-bottom: 2px solid @maroon;
   color: @mantle;
 }
@@ -200,7 +205,7 @@ tooltip label {
 }
 
 #tray > widget {
-  border-top: 2px solid @text;
+  /* border-top: 2px solid @text; */
   border-bottom: 2px solid @text;
   background-color: @base;
   color: @text;
@@ -208,7 +213,7 @@ tooltip label {
 }
 
 #tray > widget:hover {
-  border-top: 2px solid @accent;
+  /* border-top: 2px solid @accent; */
   border-bottom: 2px solid @accent;
   background-color: @surface0;
   color: @accent;
@@ -549,7 +554,7 @@ tooltip label {
 
 #idle_inhibitor.activated {
   background-color: @accent;
-  border-top: 2px solid @accent;
+  /* border-top: 2px solid @accent; */
   border-bottom: 2px solid @accent;
   color: @base;
 }

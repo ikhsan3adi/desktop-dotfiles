@@ -9,19 +9,18 @@
         "sway/workspaces",
         "idle_inhibitor",
         "sway/mode",
+        "sway/scratchpad",
         "tray",
         "mpris"
     ],
     "modules-center": [
-        // "sway/window"
         "clock"
     ],
     "modules-right": [
-        // "sway/scratchpad",
         // "custom/kernel",
         // "disk#ssd",
         // "temperature",
-        // "privacy",
+        "privacy",
         "network",
         "bluetooth",
         "pulseaudio",
@@ -151,7 +150,8 @@
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}  ({signalStrength}%)",
         "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr}   ({signalStrength}%)",
         "on-click": "exec ~/.config/waybar/togglewifi.sh",
-        "on-click-right": "alacritty --command nmtui-connect"
+        "on-click-right": "alacritty --command nmtui-connect",
+        "max-length": 36
     },
     "custom/weather": {
         "interval": 300,
@@ -197,7 +197,7 @@
             "critical": 20
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% {icon} {time}",
+        "format-charging": "{capacity}% ⭍",
         "format-full": "{capacity}% {icon}",
         "format-icons": [
             " ",
