@@ -3,11 +3,12 @@
     "position": "top",
     "height": 26,
     "spacing": 0,
-    "margin": "0 8",
+    "margin": "0",
     "reload_style_on_change": true,
     "modules-left": [
         "sway/workspaces",
         "idle_inhibitor",
+        "privacy",
         "sway/mode",
         "sway/scratchpad",
         "tray",
@@ -20,7 +21,6 @@
         // "custom/kernel",
         // "disk#ssd",
         // "temperature",
-        "privacy",
         "network",
         "bluetooth",
         "pulseaudio",
@@ -46,6 +46,24 @@
             "9": "IX",
             "10": "X"
         }
+    },
+    "privacy": {
+        "icon-spacing": 0,
+        "icon-size": 16,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true
+            },
+            {
+                "type": "audio-out",
+                "tooltip": true
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true
+            }
+        ]
     },
     "bluetooth": {
         "format": "",
@@ -161,7 +179,7 @@
         "tooltip": true
     },
     "pulseaudio": {
-        "scroll-step": 2,
+        "scroll-step": 1,
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": "  {icon} {format_source}",

@@ -39,6 +39,10 @@ tooltip label {
 }
 
 /* modules-left */
+.modules-left {
+  padding-left: 8px;
+}
+
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;
 }
@@ -115,6 +119,10 @@ tooltip label {
 } */
 
 /* modules-right */
+.modules-right {
+  padding-right: 8px;
+}
+
 .modules-right > widget:last-child > #workspaces {
   margin-right: 0;
 }
@@ -134,7 +142,7 @@ tooltip label {
 } */
 
 .modules-right > widget:last-child > * {
-  border-right: 2px solid @text;
+  /* border-right: 2px solid @text; */
 }
 
 .modules-right > widget > *:hover {
@@ -143,7 +151,7 @@ tooltip label {
 }
 
 .modules-right > widget:last-child > *:hover {
-  border-right: 2px solid @accent;
+  /* border-right: 2px solid @accent; */
 }
 
 #workspaces button {
@@ -189,19 +197,19 @@ tooltip label {
 }
 
 #workspaces button:first-child {
-  border-left: 2px solid @text;
+  /* border-left: 2px solid @text; */
 }
 
 #workspaces button:first-child:hover {
-  border-left: 2px solid @accent;
+  /* border-left: 2px solid @accent; */
 }
 
 #workspaces button:first-child.focused {
-  border-left: 2px solid @accent;
+  /* border-left: 2px solid @accent; */
 }
 
 #workspaces button:first-child.urgent {
-  border-left: 2px solid @red;
+  /* border-left: 2px solid @red; */
 }
 
 #tray > widget {
@@ -222,6 +230,7 @@ tooltip label {
 
 #tray > widget > image {
   padding: 0px 4px;
+  padding-bottom: 2px;
 }
 
 #tray widget:first-child image {
@@ -535,12 +544,10 @@ tooltip label {
 }
 
 #privacy {
+  /* border-top: 2px solid @text; */
+  border-bottom: 2px solid @text;
   background-color: @base;
   color: @text;
-}
-
-#privacy:hover {
-  background-color: @surface0;
 }
 
 #idle_inhibitor {
