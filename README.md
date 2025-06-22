@@ -1,8 +1,8 @@
-# [My](https://github.com/ikhsan3adi) UNIX Desktop's Dotfiles
+# [My](https://github.com/ikhsan3adi) Dotfiles
 
 ![Preview](preview.png)
 
-My Simple Archlinux Desktop Config Files 🍚
+My Simple Archlinux (& Windows 11) Desktop Config Files 🍚
 
 > _Applicable to other distros beside Archlinux aswell_
 
@@ -18,8 +18,8 @@ My Simple Archlinux Desktop Config Files 🍚
 | Clipboard           | [wl-clipboard](https://github.com/bugaevc/wl-clipboard)                                                                                            |
 | Notification        | [mako](https://github.com/emersion/mako)                                                                                                           |
 | Screenshot          | [grim](https://gitlab.freedesktop.org/emersion/grim) \w [slurp](https://github.com/emersion/slurp)                                                 |
-| Terminal            | [Alacritty](https://github.com/alacritty/alacritty)                                                                                                |
-| Shell               | [Fish](https://fishshell.com/)                                                                                                                     |
+| Terminal            | [Alacritty](https://github.com/alacritty/alacritty) & [Windows Terminal](https://github.com/microsoft/terminal)                                    |
+| Shell               | [Fish](https://fishshell.com/) & [PowerShell 7](https://github.com/PowerShell/PowerShell)                                                          |
 | Shell Prompt        | [oh-my-posh](https://ohmyposh.dev/)                                                                                                                |
 | Code Editor         | [VSCodium](https://vscodium.com/) \w [Catppuccin Frappé Theme](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-pack) |
 | Browser             | [Thorium Browser](https://thorium.rocks/)                                                                                                          |

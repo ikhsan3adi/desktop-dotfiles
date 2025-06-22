@@ -331,5 +331,8 @@
     "scminput": false
   },
   "editor.formatOnSave": true,
-  "terminal.integrated.fontWeight": "500"
+  "terminal.integrated.fontWeight": "500",
+  "window.dialogStyle": "custom",
+  "window.menuStyle": "custom",
+  "window.controlsStyle": "custom"
 }
