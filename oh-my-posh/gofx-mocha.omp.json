@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "rosewater": "#f5e0dc",
+    "flamingo": "#f2cdcd",
+    "pink": "#f5c2e7",
+    "mauve": "#cba6f7",
+    "red": "#f38ba8",
+    "maroon": "#eba0ac",
+    "peach": "#fab387",
+    "yellow": "#f9e2af",
+    "green": "#a6e3a1",
+    "teal": "#94e2d5",
+    "sky": "#89dceb",
+    "sapphire": "#74c7ec",
+    "blue": "#89b4fa",
+    "lavender": "#b4befe",
+    "text": "#cdd6f4",
+    "subtext1": "#bac2de",
+    "subtext0": "#a6adc8",
+    "overlay2": "#9399b2",
+    "overlay1": "#7f849c",
+    "overlay0": "#6c7086",
+    "surface2": "#585b70",
+    "surface1": "#45475a",
+    "surface0": "#313244",
+    "base": "#1e1e2e",
+    "mantle": "#181825",
+    "crust": "#11111b",
+    "accent": "p:mauve"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "p:accent",
+          "foreground": "p:base",
+          "leading_diamond": "\ue0b2",
+          "style": "diamond",
+          "type": "text",
+          "template": " <b>{{ if ne .Code 0 }}!{{ else }}{{if .Root }}#{{ else }}${{ end }}{{ end }}</b> ",
+          "background_templates": [
+            "{{ if ne .Code 0 }}p:red{{ end }}"
+          ],
+          "foreground_templates": [
+            "{{ if ne .Code 0 }}p:base{{ end }}"
+          ]
+        },
+        {
+          "background": "p:surface0",
+          "foreground": "p:text",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " {{if .Root }}<b><p:red>{{ .UserName }}</></b>{{else}}{{ .UserName }}{{end}}@<b><p:accent>{{ .HostName }}</></b> ",
+          "type": "session"
+        },
+        {
+          "background": "p:surface1",
+          "foreground": "p:text",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "properties": {
+            "folder_icon": "...",
+            "folder_separator_icon": "/",
+            "right_format": "<b><i><p:accent>%s</></i></b>",
+            "home_icon": "~",
+            "style": "powerlevel",
+            "max_width": 32
+          },
+          "template": " {{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "type": "git",
+          "background": "p:surface2",
+          "foreground": "p:text",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "foreground_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:text{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:red{{ end }}",
+            "{{ if gt .Ahead 0 }}p:green{{ end }}",
+            "{{ if gt .Behind 0 }}p:yellow{{ end }}"
+          ],
+          "template": " <b>{{ .UpstreamIcon }} {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }} {{ end }}{{ if .Working.Changed }}🖉 {{ .Working.String }} {{ end }}{{ if .Staging.Changed }}🗹 {{ .Staging.String }} {{ end }}{{ if gt .StashCount 0 }}🖫 {{ .StashCount }} {{ end }}</b>",
+          "properties": {
+            "fetch_status": true,
+            "fetch_upstream_icon": true,
+            "source": "cli",
+            "branch_icon": "\uE0A0 ",
+            "branch_identical_icon": "\u2261",
+            "branch_ahead_icon": "\u2191",
+            "branch_behind_icon": "\u2193",
+            "branch_gone_icon": "\u2262",
+            "commit_icon": "\uF417 ",
+            "tag_icon": "\uF412 ",
+            "rebase_icon": "\uE728 ",
+            "cherry_pick_icon": "\uE29B ",
+            "revert_icon": "\uF0E2 ",
+            "merge_icon": "\uE727 ",
+            "no_commits_icon": "\uF594 "
+          }
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 3
+}
