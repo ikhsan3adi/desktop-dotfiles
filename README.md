@@ -1,6 +1,10 @@
 # [My](https://github.com/ikhsan3adi) Dotfiles
 
-![Preview](preview.png)
+![Preview](preview_0.png)
+
+|                                     |                                 |
+| :---------------------------------: | :-----------------------------: |
+| ![Preview Many Apps](preview_1.png) | ![Old Preview](preview_old.png) |
 
 My Simple Archlinux (& Windows 11) Desktop Config Files 🍚
 
@@ -30,7 +34,7 @@ My Simple Archlinux (& Windows 11) Desktop Config Files 🍚
 | Cursor              | [Bibata](https://github.com/ful1e5/Bibata_Cursor)                                                                                                  |
 | Font                | [JetBrainsMono Nerd Font](https://www.nerdfonts.com/font-downloads), [Font Awesome](https://archlinux.org/packages/extra/any/otf-font-awesome/)    |
 | Color Palette       | (Mostly) [Catppuccin Frappé](https://catppuccin.com/palette/)                                                                                      |
-| Wallpaper           | <https://wallhaven.cc/w/6ljyd6>                                                                                                                    |
+| Wallpaper           | <https://wallhaven.cc/w/6ljyd6>, <https://wallhaven.cc/w/5g22q5>                                                                                   |
 
 ## Install
 
