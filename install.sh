@@ -4,6 +4,7 @@ ln -s $(pwd)/sway ~/.config
 ln -s $(pwd)/oh-my-posh ~/.config
 ln -s $(pwd)/mako ~/.config
 ln -s $(pwd)/waybar ~/.config
+ln -s $(pwd)/rofi ~/.config
 
 mkdir -p ~/Pictures
 mkdir -p ~/Pictures/Screenshots

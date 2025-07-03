@@ -25,7 +25,8 @@ set $filemgr thunar
 # scripts
 set $lockS ~/.config/sway/lock.sh
 set $screenshotS ~/.config/sway/screenshot.sh
-set $menuS ~/.config/sway/menu.sh
+set $drunS ~/.config/sway/menu.sh drun
+set $runS ~/.config/sway/menu.sh run
 set $statusS ~/.config/sway/status.sh
 set $waybarS waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
 set $makoS mako -c ~/.config/mako/config
@@ -62,7 +63,8 @@ input "1739:33525:SYNA308D:00_06CB:82F5_Touchpad" {
 
 # launch apps
 bindsym $mod+Return exec $term
-bindsym $mod+d exec $menuS
+bindsym $mod+d exec $drunS
+bindsym $mod+$alt+d exec $runS
 bindsym $mod+$alt+v exec $codium
 bindsym $mod+$alt+b exec $browser
 bindsym $mod+$alt+e exec $filemgr

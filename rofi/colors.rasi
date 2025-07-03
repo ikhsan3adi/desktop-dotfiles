@@ -1,0 +1,41 @@
+/* Catppuccin Frappe */
+
+* {
+  rosewater:      #F2D5CFFF;
+  flamingo:       #EEBEBEFF;
+  pink:           #F4B8E4FF;
+  mauve:          #CA9EE6FF;
+  red:            #E78284FF;
+  maroon:         #EA999CFF;
+  peach:          #EF9F76FF;
+  yellow:         #E5C890FF;
+  green:          #A6D189FF;
+  teal:           #81C8BEFF;
+  sky:            #99D1DBFF;
+  sapphire:       #85C1DCFF;
+  blue:           #8CAAEEFF;
+  lavender:       #BABBF1FF;
+  text:           #C6D0F5FF;
+  subtext1:       #B5BFE2FF;
+  subtext0:       #A5ADCEFF;
+  overlay2:       #949CBBFF;
+  overlay1:       #838BA7FF;
+  overlay0:       #737994FF;
+  surface2:       #626880FF;
+  surface1:       #51576DFF;
+  surface0:       #414559FF;
+  base:           #303446FF;
+  mantle:         #292C3CFF;
+  crust:          #232634FF;
+
+  accent:         @teal;
+
+  background:     @base;
+  background-alt: @mantle;
+  foreground:     @text;
+  alternate-normal-foreground: @overlay1;
+  border-color:   @accent;
+  selected:       @accent;
+  active:         @accent;
+  urgent:         @red;
+}
