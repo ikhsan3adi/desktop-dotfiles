@@ -40,6 +40,9 @@ output * bg ~/Pictures/wallpaper.png fill
 # waybar
 exec $waybarS
 
+# notification
+exec $makoS
+
 # idle
 exec swayidle -w \
         timeout 180 'light -O && light -S 0.00' resume 'light -I' \
@@ -54,9 +57,6 @@ input "1739:33525:SYNA308D:00_06CB:82F5_Touchpad" {
     natural_scroll enabled
     middle_emulation enabled
 }
-
-# notification
-exec $makoS
 
 ### keybindings
 
@@ -191,17 +191,17 @@ bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
 
 #                               border          background      text         indicator     child_border
 client.focused                  $accent         $accent         $base        $text         $accent
-client.focused_inactive         $accentc5       $accentc5       $base        $subtext1     $accentc5
-client.unfocused                $textc5         $base           $subtext1    $subtext1     $transparent
+client.focused_inactive         $text           $text           $base        $subtext1     $text
+client.unfocused                $text           $base           $subtext1    $subtext1     $transparent
 client.urgent                   $red            $red            $base        $red          $red
-client.placeholder              $textc5         $base           $subtext1    $subtext1     $transparent
+client.placeholder              $textc5         $basec5         $subtext1    $subtext1     $transparent
 
 default_border pixel 2
 default_floating_border pixel 2
 titlebar_border_thickness 2
 
 gaps inner 8
-gaps top -4
+gaps top -8
 
 # specific apps window settings
 for_window [class="VSCodium"] opacity 0.9

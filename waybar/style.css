@@ -3,14 +3,14 @@
 * {
   border: none;
   font-family: JetBrainsMono Nerd Font, Font Awesome, monospace;
-  font-size: 10pt;
+  font-size: 11.8pt;
   min-height: 0;
   border-radius: 0;
 }
 
 window#waybar {
   background-color: @base;
-  /* border-top: 2px solid @text; */
+  border-top: 2px solid @text;
   border-bottom: 2px solid @text;
   color: @text;
 }
@@ -40,7 +40,7 @@ tooltip label {
 
 /* modules-left */
 .modules-left {
-  padding-left: 8px;
+  /* padding-left: 8px; */
 }
 
 .modules-left > widget:first-child > #workspaces {
@@ -48,12 +48,12 @@ tooltip label {
 }
 
 .modules-left > widget > * {
-  /* border-top: 2px solid @text; */
+  border-top: 2px solid @text;
   border-bottom: 2px solid @text;
 }
 
 .modules-left > widget > *:hover {
-  /* border-top: 2px solid @accent; */
+  border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
 }
 
@@ -92,12 +92,12 @@ tooltip label {
 
 /* modules-center */
 .modules-center > widget > * {
-  /* border-top: 2px solid @text; */
+  border-top: 2px solid @text;
   border-bottom: 2px solid @text;
 }
 
 .modules-center > widget > *:hover {
-  /* border-top: 2px solid @accent; */
+  border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
 }
 
@@ -120,7 +120,7 @@ tooltip label {
 
 /* modules-right */
 .modules-right {
-  padding-right: 8px;
+  /* padding-right: 8px; */
 }
 
 .modules-right > widget:last-child > #workspaces {
@@ -128,7 +128,7 @@ tooltip label {
 }
 
 .modules-right > widget > * {
-  /* border-top: 2px solid @text; */
+  border-top: 2px solid @text;
   border-bottom: 2px solid @text;
 }
 
@@ -142,23 +142,24 @@ tooltip label {
 } */
 
 .modules-right > widget:last-child > * {
-  /* border-right: 2px solid @text; */
+  border-right: 2px solid @text;
 }
 
 .modules-right > widget > *:hover {
-  /* border-top: 2px solid @accent; */
+  border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
 }
 
 .modules-right > widget:last-child > *:hover {
-  /* border-right: 2px solid @accent; */
+  border-right: 2px solid @accent;
 }
 
 #workspaces button {
-  padding: 0 0;
+  padding: 0 4;
+  min-width: 24px;
   background-color: @base;
   color: @text;
-  /* border-top: 2px solid @text; */
+  border-top: 2px solid @text;
   border-bottom: 2px solid @text;
   box-shadow: inherit;
   text-shadow: inherit;
@@ -166,7 +167,7 @@ tooltip label {
 
 #workspaces button:hover {
   background-color: @surface0;
-  /* border-top: 2px solid @accent; */
+  border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
   color: @accent;
   font-weight: 700;
@@ -174,7 +175,7 @@ tooltip label {
 
 #workspaces button.focused {
   background-color: @accent;
-  /* border-top: 2px solid @accent; */
+  border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
   color: @base;
   font-weight: 900;
@@ -182,7 +183,7 @@ tooltip label {
 
 #workspaces button.urgent {
   background-color: @red;
-  /* border-top: 2px solid @red; */
+  border-top: 2px solid @red;
   border-bottom: 2px solid @red;
   color: @base;
   font-weight: 700;
@@ -191,29 +192,29 @@ tooltip label {
 #workspaces button.focused.urgent {
   font-weight: 900;
   background-color: @maroon;
-  /* border-top: 2px solid @maroon; */
+  border-top: 2px solid @maroon;
   border-bottom: 2px solid @maroon;
   color: @mantle;
 }
 
 #workspaces button:first-child {
-  /* border-left: 2px solid @text; */
+  border-left: 2px solid @text;
 }
 
 #workspaces button:first-child:hover {
-  /* border-left: 2px solid @accent; */
+  border-left: 2px solid @accent;
 }
 
 #workspaces button:first-child.focused {
-  /* border-left: 2px solid @accent; */
+  border-left: 2px solid @accent;
 }
 
 #workspaces button:first-child.urgent {
-  /* border-left: 2px solid @red; */
+  border-left: 2px solid @red;
 }
 
 #tray > widget {
-  /* border-top: 2px solid @text; */
+  border-top: 2px solid @text;
   border-bottom: 2px solid @text;
   background-color: @base;
   color: @text;
@@ -221,7 +222,7 @@ tooltip label {
 }
 
 #tray > widget:hover {
-  /* border-top: 2px solid @accent; */
+  border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
   background-color: @surface0;
   color: @accent;
@@ -229,18 +230,7 @@ tooltip label {
 }
 
 #tray > widget > image {
-  padding: 0px 4px;
-  padding-bottom: 2px;
-}
-
-#tray widget:first-child image {
-  padding-left: 7px;
-  padding-right: 4px;
-}
-
-#tray widget:last-child image {
-  padding-left: 4px;
-  padding-right: 7px;
+  padding: 0px 7px;
 }
 
 #tray > .passive {
@@ -362,7 +352,7 @@ tooltip label {
 #cpu {
   background-color: @base;
   color: @sapphire;
-  min-width: 42px;
+  min-width: 50px;
 }
 
 #cpu.normal {
@@ -388,7 +378,7 @@ tooltip label {
 #memory {
   background-color: @base;
   color: @sapphire;
-  min-width: 47px;
+  min-width: 50px;
 }
 
 #memory.normal {
@@ -544,7 +534,7 @@ tooltip label {
 }
 
 #privacy {
-  /* border-top: 2px solid @text; */
+  border-top: 2px solid @text;
   border-bottom: 2px solid @text;
   background-color: @base;
   color: @text;
@@ -561,7 +551,7 @@ tooltip label {
 
 #idle_inhibitor.activated {
   background-color: @accent;
-  /* border-top: 2px solid @accent; */
+  border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
   color: @base;
 }
