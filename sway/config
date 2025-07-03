@@ -23,6 +23,7 @@ set $browser thorium-browser
 set $filemgr thunar
 
 # scripts
+set $scaleS wlr-randr --output eDP-1 --scale 1.25
 set $lockS ~/.config/sway/lock.sh
 set $screenshotS ~/.config/sway/screenshot.sh
 set $drunS ~/.config/sway/menu.sh drun
@@ -35,6 +36,10 @@ set $makoS mako -c ~/.config/mako/config
 
 # font
 font pango:JetBrainsMono Nerd Font Propo Bold 10
+
+# scaling
+exec $scaleS
+
 # wallpaper
 output * bg ~/Pictures/wallpaper.png fill
 

@@ -13,7 +13,7 @@ swaylock \
   --font "JetBrainsMono Nerd Font Propo" \
   \
   --indicator-idle-visible \
-  --indicator-radius 200 \
+  --indicator-radius 180 \
   --indicator-thickness 2 \
   \
   --separator-color $transparent \

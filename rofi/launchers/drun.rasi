@@ -35,7 +35,7 @@ mainbox {
   margin:                     0px;
   padding:                    16px;
   border:                     2px solid;
-  border-color:               @selected;
+  border-color:               @foreground;
   background-color:           transparent;
   children:                   [ "inputbar", "listview" ];
 }
@@ -55,7 +55,7 @@ inputbar {
 prompt {
   enabled:                    true;
   background-color:           inherit;
-  text-color:                 inherit;
+  text-color:                 @selected;
 }
 
 textbox-prompt-colon {

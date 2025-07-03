@@ -3,7 +3,7 @@
 * {
   border: none;
   font-family: JetBrainsMono Nerd Font, Font Awesome, monospace;
-  font-size: 11.8pt;
+  font-size: 10pt;
   min-height: 0;
   border-radius: 0;
 }
@@ -352,7 +352,7 @@ tooltip label {
 #cpu {
   background-color: @base;
   color: @sapphire;
-  min-width: 50px;
+  min-width: 45px;
 }
 
 #cpu.normal {
@@ -378,7 +378,7 @@ tooltip label {
 #memory {
   background-color: @base;
   color: @sapphire;
-  min-width: 50px;
+  min-width: 47px;
 }
 
 #memory.normal {

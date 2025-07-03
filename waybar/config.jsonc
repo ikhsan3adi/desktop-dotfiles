@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
+    "height": 26,
     "spacing": 0,
     "margin": "0 8 8 8",
     "reload_style_on_change": true,
@@ -24,7 +24,7 @@
         "network",
         "bluetooth",
         "pulseaudio",
-        "custom/weather",
+        // "custom/weather",
         "cpu",
         "memory",
         "battery"

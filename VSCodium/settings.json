@@ -201,7 +201,7 @@
       ]
     }
   },
-  "window.zoomLevel": 0.97531,
+  "window.zoomLevel": 0.531,
   "database-client.telemetry.usesOnlineServices": false,
   "intelephense.environment.phpVersion": "8.3.10",
   "terminal.external.windowsExec": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.21.3231.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe",
@@ -313,7 +313,6 @@
   "git-graph.maxDepthOfRepoSearch": 2,
   "workbench.preferredLightColorTheme": "Catppuccin Mocha",
   "better-comments.highlightPlainText": true,
-  "editor.fontSize": 16,
   "terminal.integrated.fontLigatures.enabled": true,
   "window.menuBarVisibility": "toggle",
   "workbench.navigationControl.enabled": false,
