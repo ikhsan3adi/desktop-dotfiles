@@ -320,7 +320,6 @@
   "catppuccin.extraBordersEnabled": true,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 15000,
-  "window.customTitleBarVisibility": "never",
   "debug.console.fontFamily": "\"JetBrainsMono Nerd Font Mono\", default",
   "terminal.external.linuxExec": "alacritty",
   "github.copilot.enable": {
@@ -333,5 +332,7 @@
   "terminal.integrated.fontWeight": "500",
   "window.dialogStyle": "custom",
   "window.menuStyle": "custom",
-  "window.controlsStyle": "custom"
+  "window.controlsStyle": "custom",
+  "window.customTitleBarVisibility": "never",
+  "editor.fontSize": 16
 }
