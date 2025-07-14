@@ -18,7 +18,8 @@ set $term alacritty
 # VSCodium
 set $codium codium
 # browser
-set $browser thorium-browser
+# set $browser thorium-browser
+set $browser zen-browser
 # file manager
 set $filemgr thunar
 

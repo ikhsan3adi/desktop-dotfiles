@@ -29,7 +29,7 @@ My Simple Archlinux (& Windows 11) Desktop Config Files 🍚
 | Shell Prompt          | [oh-my-posh](https://ohmyposh.dev/)                                                                                                                                                   |
 | Terminal Visuals      | [fastfetch](https://github.com/fastfetch-cli/fastfetch/), [tty-clock](https://github.com/xorg62/tty-clock), [cmatrix](https://github.com/abishekvashok/cmatrix), pipes.sh & many more |
 | Code Editor           | [VSCodium](https://vscodium.com/) \w [Catppuccin Frappé Theme](https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-pack)                                    |
-| Browser               | [Thorium Browser](https://thorium.rocks/)                                                                                                                                             |
+| Browser               | [Zen Browser](https://zen-browser.app/), [Thorium Browser](https://thorium.rocks/)                                                                                                    |
 | File Manager          | [Thunar](https://docs.xfce.org/xfce/thunar/start)                                                                                                                                     |
 | GTK settings editor   | [nwg-look](https://github.com/nwg-piotr/nwg-look)                                                                                                                                     |
 | GTK theme             | [Catppuccin Frappé GTK](https://github.com/catppuccin/gtk/blob/main/docs/USAGE.md)                                                                                                    |
