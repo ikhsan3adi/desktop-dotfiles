@@ -198,11 +198,11 @@ bindsym $ctrl+$mod+$alt+Shift+r exec reboot
 bindsym $ctrl+$mod+$alt+Shift+u exec poweroff
 
 #                               border          background      text         indicator     child_border
-client.focused                  $accent         $accent         $base        $text         $accent
-client.focused_inactive         $text           $text           $base        $subtext1     $text
-client.unfocused                $text           $base           $subtext1    $subtext1     $transparent
+client.focused                  $accent         $accent         $base        $accent       $accent
+client.focused_inactive         $text           $text           $base        $text         $text
+client.unfocused                $text           $base           $subtext1    $transparent  $transparent
 client.urgent                   $red            $red            $base        $red          $red
-client.placeholder              $textc5         $basec5         $subtext1    $subtext1     $transparent
+client.placeholder              $textc5         $basec5         $subtext1    $transparent  $transparent
 
 default_border pixel 2
 default_floating_border pixel 2
