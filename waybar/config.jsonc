@@ -93,15 +93,17 @@
         "format-icons": {
             "on": "",
             "off": "",
+            "disabled": "",
             "connected": "",
             "no-controller": ""
         },
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-on": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-disabled": "Controller Disabled",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t[{device_battery_percentage}%]",
-        "tooltip-format-no-controller": "No Bluetooth",
+        "tooltip-format-no-controller": "No Controller or Service disabled",
         "on-click-right": "exec bluetoothctl power on",
         "on-click": "exec bluetoothctl power off"
     },
