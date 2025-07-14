@@ -97,10 +97,10 @@
             "connected": "",
             "no-controller": ""
         },
-        "tooltip-format": "{controller_alias}\t{controller_address}",
-        "tooltip-format-on": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format": "{icon} {controller_alias}\t{controller_address}",
+        "tooltip-format-on": "{icon} {controller_alias}\t{controller_address}\n\n{num_connections} connected",
         "tooltip-format-disabled": "Controller Disabled",
-        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-connected": "{icon} {controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t[{device_battery_percentage}%]",
         "tooltip-format-no-controller": "No Controller or Service disabled",
@@ -195,7 +195,7 @@
         "interface-wifi": "wlp2s*",
         "format-disabled": "Wi-Fi Off {icon}",
         "format-disconnected": "Disconnected {icon}",
-        "format-ethernet": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes} {icon} eth",
+        "format-ethernet": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes} {icon} ETH",
         "format-wifi": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes} {icon} {essid}",
         "format-linked": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes} {icon} (No IP)",
         "format-icons": {
@@ -205,10 +205,10 @@
             "wifi": " ",
             "linked": ""
         },
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
-        "tooltip-format-disconnected": "Disconnected ⚠",
-        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}  ({signalStrength}%)",
-        "tooltip-format-wifi": "{ifname}: {ipaddr}/{cidr}   ({signalStrength}%)",
+        "tooltip-format": "{icon} {ifname}\t{ipaddr}/{cidr}",
+        "tooltip-format-disabled": "Wi-Fi Off",
+        "tooltip-format-disconnected": "{icon} Wi-Fi Disconnected\nSearching for networks...",
+        "tooltip-format-wifi": "{icon} {ifname}\t{ipaddr}/{cidr} [{signalStrength}%]",
         "on-click": "exec ~/.config/waybar/togglewifi.sh",
         "on-click-right": "alacritty --command nmtui-connect",
         "max-length": 36
@@ -223,8 +223,8 @@
     "pulseaudio": {
         "scroll-step": 1,
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "  {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": "   {format_source}",
         "format-muted": "  {format_source}",
         "format-source": "{volume}%  ",
         "format-source-muted": "  ",
