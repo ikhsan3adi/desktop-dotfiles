@@ -91,7 +91,7 @@ tooltip label {
 } */
 
 /* modules-center */
-.modules-center > widget > * {
+/* .modules-center > widget > * {
   border-top: 2px solid @text;
   border-bottom: 2px solid @text;
 }
@@ -99,7 +99,7 @@ tooltip label {
 .modules-center > widget > *:hover {
   border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
-}
+} */
 
 /* 
 .modules-center > widget:first-child > * {
@@ -127,10 +127,11 @@ tooltip label {
   margin-right: 0;
 }
 
+/* 
 .modules-right > widget > * {
   border-top: 2px solid @text;
   border-bottom: 2px solid @text;
-}
+} */
 
 /* 
 .modules-right > widget:first-child > * {
@@ -141,6 +142,7 @@ tooltip label {
   border-left: 2px solid @accent;
 } */
 
+/* 
 .modules-right > widget:last-child > * {
   border-right: 2px solid @text;
 }
@@ -152,7 +154,7 @@ tooltip label {
 
 .modules-right > widget:last-child > *:hover {
   border-right: 2px solid @accent;
-}
+} */
 
 #workspaces button {
   padding: 0 4;
@@ -276,7 +278,6 @@ tooltip label {
 #mpris,
 #privacy,
 #custom-weather,
-#clock,
 #language,
 #pulseaudio,
 #bluetooth,
@@ -294,6 +295,54 @@ tooltip label {
   margin: 0px 0px;
   color: @text;
   font-weight: 700;
+}
+
+#datetime {
+  border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
+  background-color: @base;
+}
+
+#datetime:hover {
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
+  background-color: @surface0;
+}
+
+#datetime > widget > #clock {
+  padding: 0px 4px;
+  margin: 0px 0px;
+}
+
+#datetime > widget:first-child > #clock {
+  padding-left: 8px;
+  color: @subtext1;
+  font-weight: 700;
+}
+
+#datetime > widget:last-child > #clock {
+  padding-right: 8px;
+  color: @accent;
+  font-weight: 900;
+}
+
+#datetime > widget > #clock:hover {
+  color: @accent;
+  font-weight: 900;
+}
+
+#quick-settings > widget > * {
+  border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
+}
+
+#quick-settings > widget > *:hover {
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
+}
+
+#hardware {
+  background-color: @accent;
 }
 
 #custom-weather {
@@ -328,6 +377,7 @@ tooltip label {
 
 #custom-weather:hover {
   background-color: @surface0;
+  font-weight: 900;
 }
 
 #custom-kernel {
@@ -337,77 +387,62 @@ tooltip label {
 
 #custom-kernel:hover {
   background-color: @surface0;
-}
-
-#clock {
-  background-color: @base;
-  color: @text;
-}
-
-#clock:hover {
-  background-color: @surface0;
-  color: @accent;
+  font-weight: 900;
 }
 
 #cpu {
-  background-color: @base;
-  color: @sapphire;
-  min-width: 45px;
+  color: @base;
+  min-width: 42px;
 }
 
 #cpu.normal {
-  background-color: @base;
-  color: @text;
+  color: @base;
 }
 
 #cpu.warning {
-  background-color: @base;
-  color: @yellow;
+  background-color: @yellow;
 }
 
 #cpu.critical {
-  background-color: @base;
-  color: @red;
+  background-color: @red;
+  font-weight: 900;
 }
 
 #cpu:hover {
-  background-color: @surface0;
-  color: @mauve;
+  color: @mantle;
+  font-weight: 900;
 }
 
 #memory {
-  background-color: @base;
-  color: @sapphire;
-  min-width: 47px;
+  color: @base;
+  min-width: 42px;
 }
 
 #memory.normal {
-  background-color: @base;
-  color: @text;
+  color: @base;
 }
 
 #memory.warning {
-  background-color: @base;
-  color: @yellow;
+  background-color: @yellow;
 }
 
 #memory.critical {
-  background-color: @base;
-  color: @red;
+  background-color: @red;
+  font-weight: 900;
 }
 
 #memory:hover {
-  background-color: @surface0;
-  color: @mauve;
+  color: @mantle;
+  font-weight: 900;
 }
 
 #disk {
-  background-color: @base;
-  color: @text;
+  color: @base;
 }
 
 #disk:hover {
-  background-color: @surface0;
+  color: @mantle;
+  font-weight: 900;
 }
 
 #bluetooth,
@@ -423,7 +458,7 @@ tooltip label {
 
 #bluetooth.connected {
   background-color: @base;
-  color: @sapphire;
+  color: @blue;
 }
 
 #bluetooth.no-controller,
@@ -435,6 +470,7 @@ tooltip label {
 #bluetooth:hover {
   background-color: @surface0;
   color: @blue;
+  font-weight: 900;
 }
 
 #network {
@@ -444,7 +480,7 @@ tooltip label {
 
 #network.disabled {
   background-color: @base;
-  color: @subtext0;
+  color: @red;
 }
 
 #network.disconnected {
@@ -454,16 +490,13 @@ tooltip label {
 
 #network:hover {
   background-color: @surface0;
-}
-
-#network.disconnected:hover {
-  background-color: @surface0;
-  color: @rosewater;
+  color: @sapphire;
+  font-weight: 900;
 }
 
 #pulseaudio {
   background-color: @base;
-  color: @lavender;
+  color: @mauve;
 }
 
 #pulseaudio.warning {
@@ -478,59 +511,52 @@ tooltip label {
 
 #pulseaudio.muted {
   background-color: @base;
-  color: @subtext0;
+  color: @red;
 }
 
 #pulseaudio:hover {
   background-color: @surface0;
-}
-
-#pulseaudio.muted:hover {
-  background-color: @surface0;
-  color: @rosewater;
+  color: @mauve;
+  font-weight: 900;
 }
 
 #temperature {
-  background-color: @base;
-  color: @text;
+  color: @base;
 }
 
 #temperature.critical {
-  background-color: @base;
-  color: @red;
+  background-color: @red;
 }
 
 #temperature:hover {
-  background-color: @surface0;
+  color: @mantle;
+  font-weight: 900;
 }
 
 #battery {
-  background-color: @base;
-  color: @text;
+  color: @base;
 }
 
 #battery.full {
-  background-color: @base;
-  color: @sky;
+  font-weight: 900;
 }
 
 #battery.charging {
-  background-color: @base;
-  color: @sapphire;
+  font-weight: 900;
 }
 
 #battery.warning {
-  background-color: @base;
-  color: @yellow;
+  background-color: @yellow;
 }
 
 #battery.critical {
-  background-color: @base;
-  color: @red;
+  background-color: @red;
+  font-weight: 900;
 }
 
 #battery:hover {
-  background-color: @surface0;
+  color: @mantle;
+  font-weight: 900;
 }
 
 #privacy {
@@ -547,6 +573,7 @@ tooltip label {
 
 #idle_inhibitor:hover {
   background-color: @surface0;
+  font-weight: 900;
 }
 
 #idle_inhibitor.activated {

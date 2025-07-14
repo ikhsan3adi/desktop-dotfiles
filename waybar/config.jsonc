@@ -15,22 +15,41 @@
         "mpris"
     ],
     "modules-center": [
-        "clock"
+        "group/datetime"
     ],
     "modules-right": [
-        // "custom/kernel",
-        // "disk#ssd",
-        // "temperature",
-        "network",
-        "bluetooth",
-        "pulseaudio",
-        // "custom/weather",
-        "cpu",
-        "memory",
-        "battery"
+        "group/quick-settings",
+        "group/hardware"
     ],
+    "group/datetime": {
+        "orientation": "inherit",
+        "modules": [
+            "clock#date",
+            "clock#time"
+        ]
+    },
+    "group/quick-settings": {
+        "orientation": "inherit",
+        "modules": [
+            // "custom/kernel",
+            "network",
+            "bluetooth",
+            "pulseaudio"
+            // , "custom/weather"
+        ]
+    },
+    "group/hardware": {
+        "orientation": "inherit",
+        "modules": [
+            // "disk#ssd",
+            // "temperature",
+            "cpu",
+            "memory",
+            "battery"
+        ]
+    },
     "sway/workspaces": {
-        "disable-scroll": false,
+        "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
         "format": "{icon}",
@@ -48,7 +67,7 @@
         }
     },
     "privacy": {
-        "icon-spacing": 0,
+        "icon-spacing": 12,
         "icon-size": 16,
         "modules": [
             {
@@ -66,15 +85,23 @@
         ]
     },
     "bluetooth": {
-        "format": "",
-        "format-connected": "{device_alias} ",
-        "format-connected-battery": "{device_alias} [{device_battery_percentage}%] ",
-        "format-no-controller": "N/A ",
-        "format-device-preference": [],
-        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "format-on": "BT On {icon}",
+        "format-off": "BT Off {icon}",
+        "format-disabled": "BT Off {icon}",
+        "format-connected": "BT On ({num_connections}) {icon}",
+        "format-no-controller": "N/A {icon}",
+        "format-icons": {
+            "on": "",
+            "off": "",
+            "connected": "",
+            "no-controller": ""
+        },
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-on": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t[{device_battery_percentage}%]",
+        "tooltip-format-no-controller": "No Bluetooth",
         "on-click-right": "exec bluetoothctl power on",
         "on-click": "exec bluetoothctl power off"
     },
@@ -107,10 +134,10 @@
         "icon-size": 16,
         "spacing": 0
     },
-    "clock": {
-        "interval": 1,
+    "clock#date": {
+        "interval": 3600,
         "timezone": "Asia/Jakarta",
-        "format": "{:%a, %d %b %Y %H:%M:%S}",
+        "format": "{:%a, %d %b %Y}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
             "mode": "year",
@@ -132,6 +159,12 @@
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
         }
+    },
+    "clock#time": {
+        "interval": 1,
+        "timezone": "Asia/Jakarta",
+        "format": "{:%H:%M:%S}",
+        "tooltip-format": "{:%Ec}"
     },
     "cpu": {
         "interval": 3,
@@ -158,11 +191,18 @@
         "interval": 2,
         "interface-ethernet": "enp1s*",
         "interface-wifi": "wlp2s*",
-        "format": "Connecting...",
-        "format-disconnected": "Disconnected ⚠",
-        "format-ethernet": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes}  eth",
-        "format-wifi": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes}   {essid}",
-        "format-linked": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes}  (No IP)",
+        "format-disabled": "Wi-Fi Off {icon}",
+        "format-disconnected": "Disconnected {icon}",
+        "format-ethernet": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes} {icon} eth",
+        "format-wifi": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes} {icon} {essid}",
+        "format-linked": "▲ {bandwidthUpBytes} ▼ {bandwidthDownBytes} {icon} (No IP)",
+        "format-icons": {
+            "disabled": " ",
+            "disconnected": " ",
+            "ethernet": "",
+            "wifi": " ",
+            "linked": ""
+        },
         "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format-disconnected": "Disconnected ⚠",
         "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr}  ({signalStrength}%)",
