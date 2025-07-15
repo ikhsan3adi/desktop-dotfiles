@@ -337,8 +337,8 @@ tooltip label {
 }
 
 #quick-settings > widget > *:hover {
-  border-top: 2px solid @accent;
-  border-bottom: 2px solid @accent;
+  /* border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent; */
 }
 
 #hardware {
@@ -378,6 +378,9 @@ tooltip label {
 #custom-weather:hover {
   background-color: @surface0;
   font-weight: 900;
+  color: @text;
+  border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
 }
 
 #custom-kernel {
@@ -388,6 +391,9 @@ tooltip label {
 #custom-kernel:hover {
   background-color: @surface0;
   font-weight: 900;
+  color: @accent;
+  border-top: 2px solid @accent;
+  border-bottom: 2px solid @accent;
 }
 
 #cpu {
@@ -471,6 +477,8 @@ tooltip label {
   background-color: @surface0;
   color: @blue;
   font-weight: 900;
+  border-top: 2px solid @blue;
+  border-bottom: 2px solid @blue;
 }
 
 #network {
@@ -492,6 +500,8 @@ tooltip label {
   background-color: @surface0;
   color: @sapphire;
   font-weight: 900;
+  border-top: 2px solid @sapphire;
+  border-bottom: 2px solid @sapphire;
 }
 
 #pulseaudio {
@@ -518,6 +528,8 @@ tooltip label {
   background-color: @surface0;
   color: @mauve;
   font-weight: 900;
+  border-top: 2px solid @mauve;
+  border-bottom: 2px solid @mauve;
 }
 
 #temperature {
@@ -574,6 +586,7 @@ tooltip label {
 #idle_inhibitor:hover {
   background-color: @surface0;
   font-weight: 900;
+  color: @accent;
 }
 
 #idle_inhibitor.activated {
