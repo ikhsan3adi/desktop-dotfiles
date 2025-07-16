@@ -104,8 +104,8 @@
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t[{device_battery_percentage}%]",
         "tooltip-format-no-controller": "No Controller or Service disabled",
-        "on-click-right": "exec bluetoothctl power on",
-        "on-click": "exec bluetoothctl power off"
+        "on-click-right": "exec overskride",
+        "on-click": "exec ~/.config/waybar/togglebt.sh"
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
