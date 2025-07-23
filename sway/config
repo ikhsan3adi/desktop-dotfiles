@@ -225,8 +225,9 @@ gaps inner 8
 gaps top -8
 
 # specific apps window settings
-for_window [class="VSCodium"] opacity 0.9
+# for_window [app_id="codium"] opacity 0.9
 for_window [class="GitHub Desktop"] opacity 0.9
-for_window [app_id="thunar"] opacity 0.9
+for_window [app_id="Thunar"] opacity 0.9
+for_window [app_id="imv"] floating enable
 
 include /etc/sway/config.d/*
