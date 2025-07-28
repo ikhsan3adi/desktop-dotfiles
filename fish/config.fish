@@ -24,6 +24,6 @@ if test "$TERM" != linux
   oh-my-posh init fish --config ~/.config/oh-my-posh/dydx-frappe.omp.json | source
 end
 
-if test "$TERM" = alacritty
+if test "$TERM" = alacritty -o "$TERM" = foot
   fastfetch
 end

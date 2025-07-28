@@ -14,7 +14,8 @@ set $up k
 set $right l
 
 # terminal emulator
-set $term alacritty
+set $term0 foot
+set $term1 alacritty
 # VSCodium
 set $codium codium
 # browser
@@ -79,7 +80,8 @@ input "1739:33525:SYNA308D:00_06CB:82F5_Touchpad" {
 ### keybindings
 
 # launch apps
-bindsym $mod+Return exec $term
+bindsym $mod+Return exec $term0
+bindsym $ctrl+$alt+t exec $term1
 bindsym $mod+d exec $drunS
 bindsym $mod+$alt+d exec $runS
 bindsym $mod+$alt+v exec $codium
