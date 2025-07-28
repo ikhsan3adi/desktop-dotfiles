@@ -15,6 +15,8 @@ export JAVA_HOME="/usr/lib/jvm/default"
 
 export CHROME_EXECUTABLE="/sbin/thorium-browser"
 
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+
 abbr --add c clear
 abbr --add ff fastfetch
 
