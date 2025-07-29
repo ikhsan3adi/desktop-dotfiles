@@ -129,7 +129,8 @@
         "status-icons": {
             "paused": "▶",
             "stopped": "⏹"
-        }
+        },
+        "dynamic-len": 64
         // "ignored-players": ["cmus"]
     },
     "tray": {
