@@ -7,7 +7,7 @@ configuration {
   display-drun:              "Run";
   display-run:               "Run";
   drun-display-format:       "{name}";
-  matching:                  "fuzzy";
+  matching:                  "normal";
 }
 
 @import                       "~/.config/rofi/colors.rasi"
