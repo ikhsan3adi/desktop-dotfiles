@@ -183,7 +183,6 @@
 	"application.shellEnvironmentResolutionTimeout": 60,
 	"Devdb.colorTheme": "dark",
 	"intelephense.runtime": "node",
-	"dart.flutterSdkPath": "D:\\sdk\\flutter",
 	"codeium.enableConfig": {
 		"*": true,
 		"markdown": true,
@@ -259,7 +258,6 @@
 			]
 		}
 	},
-	"C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/gcc.exe",
 	"explorer.confirmPasteNative": false,
 	"github.copilot.editor.enableAutoCompletions": true,
 	"supermaven.otherWarning": false,
@@ -333,5 +331,9 @@
 	"window.menuBarVisibility": "toggle",
 	"window.commandCenter": false,
 	"window.titleBarStyle": "native",
-	"window.customTitleBarVisibility": "never"
+	"window.customTitleBarVisibility": "never",
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"C_Cpp.default.compilerPath": "${default}"
 }
