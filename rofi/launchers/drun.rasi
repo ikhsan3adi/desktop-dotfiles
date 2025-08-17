@@ -18,7 +18,7 @@ window {
   location:                   center;
   anchor:                     center;
   fullscreen:                 false;
-  width:                      800px;
+  width:                      960px;
   x-offset:                   0px;
   y-offset:                   0px;
   enabled:                    true;
@@ -31,7 +31,7 @@ window {
 
 mainbox {
   enabled:                    true;
-  spacing:                    16px;
+  spacing:                    10px;
   margin:                     0px;
   padding:                    16px;
   border:                     2px solid;
@@ -42,7 +42,7 @@ mainbox {
 
 inputbar {
   enabled:                    true;
-  spacing:                    10px;
+  spacing:                    8px;
   margin:                     0px;
   padding:                    12px;
   border:                     2px solid;
@@ -77,8 +77,8 @@ entry {
 
 listview {
   enabled:                    true;
-  columns:                    2;
-  lines:                      8;
+  columns:                    3;
+  lines:                      10;
   cycle:                      true;
   dynamic:                    true;
   scrollbar:                  false;
@@ -87,7 +87,7 @@ listview {
   fixed-height:               true;
   fixed-columns:              true;
     
-  spacing:                    4px;
+  spacing:                    0px;
   margin:                     0px;
   padding:                    0px;
   border:                     0px solid;
@@ -105,9 +105,9 @@ scrollbar {
 
 element {
   enabled:                    true;
-  spacing:                    10px;
+  spacing:                    8px;
   margin:                     0px;
-  padding:                    5px;
+  padding:                    6px 8px;
   border:                     0px solid;
   border-color:               @selected;
   background-color:           transparent;
@@ -142,9 +142,9 @@ element-text {
 }
 
 error-message {
-  padding:                    15px;
+  padding:                    16px;
   border:                     2px solid;
-  border-color:               @selected;
+  border-color:               @urgent;
   background-color:           @background;
   text-color:                 @foreground;
 }
