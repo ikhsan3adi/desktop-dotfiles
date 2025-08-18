@@ -1,17 +1,16 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "small",
+    "type": "builtin",
+    // "source": "arch2",
     "padding": {
-      "top": 4,
-      "left": 2
+      "top": 1,
+      "left": 1,
+      "right": 1
     }
   },
   "display": {
-    "separator": ">  ",
-    "color": {
-      "separator": "cyan"
-    },
+    "separator": "",
     "constants": [
       "───────────────────────────────────────────────────────────────────────────",
       "│\u001b[75C│\u001b[75D"
@@ -23,80 +22,107 @@
       "type": "title"
     },
     {
-      "key": "{$2}{#39}󰌢 Machine  ",
+      "key": "{$2}{icon} Machine      > ",
       "type": "host"
     },
     {
-      "key": "{$2}{#31} Kernel   ",
-      "type": "kernel"
-    },
-    {
-      "key": "{$2}{#33}{icon} Distro   ",
-      "type": "os"
-    },
-    {
-      "key": "{$2}{#32}󰅐 Uptime   ",
-      "type": "uptime"
-    },
-    {
-      "key": "{$2}{#34} WM       ",
-      "type": "wm"
-    },
-    {
-      "key": "{$2}{#35} Term     ",
-      "type": "terminal"
-    },
-    {
-      "key": "{$2}{#36} Shell    ",
-      "type": "shell"
-    },
-    {
-      "key": "{$2}{#35}󰍛 CPU      ",
+      "key": "{$2}{icon} CPU          > ",
       "type": "cpu",
       "showPeCoreCount": true,
       "temp": true
     },
     {
-      "key": "{$2}{#34}󰍛 GPU      ",
+      "key": "{$2}{icon} GPU          > ",
       "type": "gpu"
     },
     {
-      "key": "{$2}{#33}󰉉 Disk     ",
+      "key": "{$2}{icon} Memory       > ",
+      "type": "memory"
+    },
+    {
+      "key": "{$2}{icon} BIOS         > ",
+      "type": "bios"
+    },
+    {
+      "key": "{$2}{icon} Kernel       > ",
+      "type": "kernel"
+    },
+    {
+      "key": "{$2}{icon} Distro       > ",
+      "type": "os"
+    },
+    {
+      "key": "{$2}{icon} Disk (/)     > ",
       "type": "disk",
       "folders": "/"
     },
     {
-      "key": "{$2}{#32} Memory   ",
-      "type": "memory"
+      "key": "{$2}{icon} Disk (/home) > ",
+      "type": "disk",
+      "folders": "/home"
     },
     {
-      "key": "{$2}{#31}󰩟 IPv4     ",
+      "key": "{$2}{icon} Packages     > ",
+      "type": "packages"
+    },
+    {
+      "key": "{$2}{icon} Uptime       > ",
+      "type": "uptime"
+    },
+    {
+      "key": "{$2}{icon} DE           > ",
+      "type": "de"
+    },
+    {
+      "key": "{$2}{icon} WM           > ",
+      "type": "wm"
+    },
+    {
+      "key": "{$2}{icon} Theme        > ",
+      "type": "theme"
+    },
+    {
+      "key": "{$2}{icon} Font         > ",
+      "type": "font"
+    },
+    {
+      "key": "{$2}{icon} Terminal     > ",
+      "type": "terminal"
+    },
+    {
+      "key": "{$2}{icon} Shell        > ",
+      "type": "shell"
+    },
+    {
+      "key": "{$2}{icon} Local IPv4   > ",
       "type": "localip",
       "showIpv4": true,
       "showIpv6": false,
       "format": "{ipv4} ({ifname})"
     },
     {
-      "key": "{$2}{#34}󰩟 IPv6     ",
+      "key": "{$2}{icon} Local IPv6   > ",
       "type": "localip",
       "showIpv4": false,
       "showIpv6": true,
       "format": "{ipv6} ({ifname})"
     },
     {
-      "key": "{$2}{#34}󰩠 MAC      ",
-      "type": "localip",
-      "showIpv4": false,
-      "showIpv6": false,
-      "showMac": true,
-      "format": "{mac} ({ifname})"
+      "key": "{$2}{icon} DNS          > ",
+      "type": "dns"
     },
+    // {
+    //   "key": "{$2}{icon} MAC          > ",
+    //   "type": "localip",
+    //   "showMac": true,
+    //   "format": "{mac} ({ifname})"
+    // },
     {
       "format": "{#1}{#keys}├{$1}┤",
       "type": "custom"
     },
     {
-      "key": "{$2}{#39} Colors   ",
+      "key": "{$2}{icon} Colors       > ",
       "type": "colors",
       "symbol": "square"
     },
