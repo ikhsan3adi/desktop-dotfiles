@@ -43,7 +43,6 @@
 		"shell": true
 	},
 	"dart.previewFlutterUiGuides": true,
-	"editor.lineHeight": 20,
 	"dart.previewFlutterUiGuidesCustomTracking": true,
 	"workbench.tree.renderIndentGuides": "always",
 	"files.eol": "\n",
@@ -138,7 +137,7 @@
 	"dart.renameFilesWithClasses": "prompt",
 	"dart.flutterHotReloadOnSave": "manualIfDirty",
 	"dart.env": {
-		"CHROME_EXECUTABLE": "thorium-browser",
+		"CHROME_EXECUTABLE": "thorium-browser"
 	},
 	"workbench.tree.indent": 12,
 	"[handlebars]": {
@@ -335,5 +334,9 @@
 	"[vue]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"C_Cpp.default.compilerPath": "${default}"
+	"C_Cpp.default.compilerPath": "${default}",
+	"editor.lineHeight": 20,
+	"editor.lineNumbers": "relative",
+	"editor.maxTokenizationLineLength": 10000,
+	"editor.renderLineHighlight": "gutter"
 }
