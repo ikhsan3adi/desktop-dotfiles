@@ -43,7 +43,6 @@
     "shell": true
   },
   "dart.previewFlutterUiGuides": true,
-  "editor.lineHeight": 20,
   "dart.previewFlutterUiGuidesCustomTracking": true,
   "workbench.tree.renderIndentGuides": "always",
   "files.eol": "\n",
@@ -330,5 +329,10 @@
   "editor.fontSize": 13,
   "window.dialogStyle": "custom",
   "window.menuStyle": "custom",
-  "window.controlsStyle": "custom"
+  "window.controlsStyle": "custom",
+  "editor.maxTokenizationLineLength": 5000,
+  "editor.renderLineHighlight": "gutter",
+  "zenMode.hideLineNumbers": false,
+  "search.showLineNumbers": true,
+  "editor.fontVariations": true
 }

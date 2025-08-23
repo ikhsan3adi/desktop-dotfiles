@@ -37,7 +37,7 @@
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "JetBrainsMono Nerd Font Mono"
+                "face": "JetBrainsMono Nerd Font Mono, Cascadia Code"
             },
             "intenseTextStyle": "all",
             "opacity": 50,
