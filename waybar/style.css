@@ -39,13 +39,13 @@ tooltip label {
 }
 
 /* modules-left */
-.modules-left {
-  /* padding-left: 8px; */
+/* .modules-left {
+  padding-left: 8px;
 }
 
 .modules-left > widget:first-child > #workspaces {
   margin-left: 0;
-}
+} */
 
 .modules-left > widget > * {
   border-top: 2px solid @text;
@@ -99,9 +99,8 @@ tooltip label {
 .modules-center > widget > *:hover {
   border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
-} */
+}
 
-/* 
 .modules-center > widget:first-child > * {
   border-left: 2px solid @text;
 }
@@ -119,30 +118,27 @@ tooltip label {
 } */
 
 /* modules-right */
-.modules-right {
-  /* padding-right: 8px; */
+/* .modules-right {
+  padding-right: 8px;
 }
 
 .modules-right > widget:last-child > #workspaces {
   margin-right: 0;
 }
 
-/* 
 .modules-right > widget > * {
   border-top: 2px solid @text;
   border-bottom: 2px solid @text;
-} */
+}
 
-/* 
 .modules-right > widget:first-child > * {
   border-left: 2px solid @text;
 }
 
 .modules-right > widget:first-child > *:hover {
   border-left: 2px solid @accent;
-} */
+}
 
-/* 
 .modules-right > widget:last-child > * {
   border-right: 2px solid @text;
 }
@@ -298,15 +294,21 @@ tooltip label {
 }
 
 #datetime {
-  border-top: 2px solid @text;
-  border-bottom: 2px solid @text;
   background-color: @base;
 }
 
 #datetime:hover {
+  background-color: @surface0;
+}
+
+#datetime > widget > * {
+  border-top: 2px solid @text;
+  border-bottom: 2px solid @text;
+}
+
+#datetime:hover > widget > * {
   border-top: 2px solid @accent;
   border-bottom: 2px solid @accent;
-  background-color: @surface0;
 }
 
 #datetime > widget > #clock {
