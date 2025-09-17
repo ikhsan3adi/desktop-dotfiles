@@ -44,6 +44,10 @@
       "type": "bios"
     },
     {
+      "format": "{#1}{#keys}├{$1}┤",
+      "type": "custom"
+    },
+    {
       "key": "{$2}{icon} Kernel       > ",
       "type": "kernel"
     },
@@ -60,6 +64,10 @@
       "key": "{$2}{icon} Disk (/home) > ",
       "type": "disk",
       "folders": "/home"
+    },
+    {
+      "format": "{#1}{#keys}├{$1}┤",
+      "type": "custom"
     },
     {
       "key": "{$2}{icon} Packages     > ",
@@ -92,6 +100,10 @@
     {
       "key": "{$2}{icon} Shell        > ",
       "type": "shell"
+    },
+    {
+      "format": "{#1}{#keys}├{$1}┤",
+      "type": "custom"
     },
     {
       "key": "{$2}{icon} Local IPv4   > ",
