@@ -1,0 +1,1 @@
+ln -s $(pwd)/scripts/s-*.sh ~/.local/bin/
