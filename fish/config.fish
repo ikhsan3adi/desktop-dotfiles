@@ -5,7 +5,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/go/bin/"
 
 export ANDROID_HOME="/opt/android-sdk"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
