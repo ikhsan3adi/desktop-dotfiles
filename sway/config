@@ -48,7 +48,7 @@ set $togglewifiS ~/.config/waybar/togglewifi.sh
 ### configs
 
 # font
-font pango:JetBrainsMono Nerd Font Propo Bold 10
+font pango:CommitMono Nerd Font Propo Bold 11.7
 
 # scaling
 exec $scaleS
@@ -231,6 +231,10 @@ gaps top -8
 for_window [class="GitHub Desktop"] opacity 0.9
 for_window [app_id="thunar"] {
     opacity 0.9
+    floating enable
+    resize set width 1280 height 720
+}
+for_window [app_id="io.github.kaii_lb.Overskride"] {
     floating enable
     resize set width 1280 height 720
 }
