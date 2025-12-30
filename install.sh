@@ -6,9 +6,9 @@ ln -s $(pwd)/mako ~/.config
 ln -s $(pwd)/waybar ~/.config
 ln -s $(pwd)/rofi ~/.config
 
-mkdir -p ~/Pictures
+mkdir -p ~/Pictures/wallpapers
 mkdir -p ~/Pictures/Screenshots
 
-ln -s $(pwd)/images/wallpaper.png ~/Pictures/wallpaper.png
+ln -s $(pwd)/images/wallpaper.png ~/Pictures/wallpapers/wallpaper.png
 
 ln -s $(pwd)/fish/config.fish ~/.config/fish/config.fish
