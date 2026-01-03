@@ -10,7 +10,7 @@ swaylock \
   --timestr "%H:%M:%S" \
   --datestr "%a, %d %b %Y" \
   \
-  --font "JetBrainsMono Nerd Font Propo" \
+  --font "CaskaydiaCove Nerd Font Mono" \
   \
   --indicator-idle-visible \
   --indicator-radius 180 \
@@ -47,7 +47,7 @@ swaylock \
   --ring-ver-color $transparent \
   --ring-wrong-color $transparent \
   \
-  --effect-blur 5x5 \
+  --effect-blur 3x3 \
   --effect-pixelate 5 \
   --effect-vignette 0.5:0.7 \
   $1

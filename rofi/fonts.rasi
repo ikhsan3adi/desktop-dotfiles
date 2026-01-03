@@ -1,3 +1,7 @@
 * {
-    font: "JetBrainsMono Nerd Font 10";
+    font: "DM Sans 12";
+}
+
+prompt, entry {
+    font: "CaskaydiaCove Nerd Font 12";
 }
