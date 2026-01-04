@@ -28,7 +28,7 @@
   mantle:         #292C3CFF;
   crust:          #232634FF;
 
-  accent:         @teal;
+  accent:         @blue;
 
   background:     @base;
   background-alt: @mantle;

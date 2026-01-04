@@ -1,10 +1,10 @@
 # mako configuration file
 
-font=JetBrainsMono Nerd Font Propo 10
+font=CaskaydiaCove Nerd Font Propo 12
 
-width=400
+width=480
 
-height=150
+height=240
 
 border-size=1
 
@@ -26,7 +26,7 @@ default-timeout=15000
 
 [urgency=normal]
 text-color=#c6d0f5
-border-color=#81c8be
+border-color=#8caaee
 background-color=#414559c0
 default-timeout=30000
 
@@ -35,3 +35,32 @@ text-color=#303446
 border-color=#e78284
 background-color=#e78284ee
 default-timeout=0
+
+# color references
+# rosewater #f2d5cf
+# flamingo #eebebe
+# pink #f4b8e4
+# mauve #ca9ee6
+# red #e78284
+# maroon #ea999c
+# peach #ef9f76
+# yellow #e5c890
+# green #a6d189
+# teal #81c8be
+# sky #99d1db
+# sapphire #85c1dc
+# blue #8caaee
+# lavender #babbf1
+# text #c6d0f5
+# subtext1 #b5bfe2
+# subtext0 #a5adce
+# overlay2 #949cbb
+# overlay1 #838ba7
+# overlay0 #737994
+# surface2 #626880
+# surface1 #51576d
+# surface0 #414559
+# base #303446
+# mantle #292c3c
+# crust #232634
+# transparent #00000000

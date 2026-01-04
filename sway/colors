@@ -26,4 +26,4 @@ set $mantle "#292c3c"
 set $crust "#232634"
 set $transparent "#00000000"
 
-set $accent $teal
+set $accent $blue

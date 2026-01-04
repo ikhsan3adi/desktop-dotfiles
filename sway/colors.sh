@@ -26,4 +26,4 @@ mantle="#292c3c"
 crust="#232634"
 transparent="#00000000"
 
-accent=$teal
+accent=$blue
