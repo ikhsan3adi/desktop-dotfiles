@@ -247,6 +247,9 @@ for_window [app_id="io.github.kaii_lb.Overskride"] {
     floating enable
     resize set width 1280 height 720
 }
+for_window [app_id="antigravity_tools"] {
+    floating enable
+}
 for_window [app_id="imv"] floating enable
 
 include /etc/sway/config.d/*
