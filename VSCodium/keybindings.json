@@ -61,5 +61,9 @@
     "key": "ctrl+shift+alt+up",
     "command": "-editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+j ctrl+alt+p",
+    "command": "jupyter.runFileInteractive"
   }
 ]
