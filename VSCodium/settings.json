@@ -132,7 +132,6 @@
   "window.menuStyle": "custom",
   "window.dialogStyle": "native",
   "window.controlsStyle": "hidden",
-  "window.commandCenter": false,
   "window.menuBarVisibility": "classic",
   "window.titleBarStyle": "native",
   "window.customTitleBarVisibility": "windowed",
@@ -190,5 +189,14 @@
   "jupyter.experiments.enabled": false,
   "jupyter.logKernelOutputSeparately": true,
   "jupyter.disableJupyterAutoStart": true,
-  "workbench.activityBar.location": "top"
+  "workbench.activityBar.location": "top",
+  "chat.disableAIFeatures": true,
+  "chat.agent.enabled": false,
+  "php.validate.executablePath": "~/.phpenv/shims/php",
+  "php.cache.enableOnlineCache": false,
+  "notebook.output.textLineLimit": 100,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  }
 }
