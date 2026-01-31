@@ -192,7 +192,7 @@
   "workbench.activityBar.location": "top",
   "chat.disableAIFeatures": true,
   "chat.agent.enabled": false,
-  "php.validate.executablePath": "~/.phpenv/shims/php",
+  "php.validate.executablePath": "/home/dydx/.phpenv/shims/php",
   "php.cache.enableOnlineCache": false,
   "notebook.output.textLineLimit": 100,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
