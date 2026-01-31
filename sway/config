@@ -223,8 +223,8 @@ default_border pixel 2
 default_floating_border pixel 2
 titlebar_border_thickness 2
 
-gaps inner 8
-gaps top -8
+# gaps inner 8
+# gaps top -8
 
 # specific apps window settings
 # for_window [app_id="codium"] opacity 0.9
