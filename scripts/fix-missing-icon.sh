@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # ICONS_DIR=~/.icons
-ICONS_DIR=/usr/share/icons
+# ICONS_DIR=/usr/share/icons
+ICONS_DIR=~/.local/share/icons
 
 ln -s $ICONS_DIR/Papirus/16x16/apps/blender.svg $ICONS_DIR/Papirus/16x16/apps/blender-lts.svg
 ln -s $ICONS_DIR/Papirus/22x22/apps/blender.svg $ICONS_DIR/Papirus/22x22/apps/blender-lts.svg
