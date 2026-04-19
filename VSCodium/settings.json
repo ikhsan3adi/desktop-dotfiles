@@ -3,7 +3,6 @@
   "editor.suggestSelection": "first",
   "security.workspace.trust.untrustedFiles": "open",
   "problems.showCurrentInStatus": true,
-  "editor.wordWrap": "off",
   "editor.linkedEditing": true,
   "explorer.confirmDragAndDrop": false,
   "editor.tabSize": 2,
@@ -25,7 +24,6 @@
     "source.organizeImports": "explicit"
   },
   "extensions.autoUpdate": false,
-  "update.mode": "manual",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "git.enableSmartCommit": true,
@@ -176,11 +174,9 @@
   "markdown-pdf.omitBackground": true,
   "terminal.integrated.lineHeight": 1,
   "window.zoomLevel": 2,
-  "workbench.iconTheme": "catppuccin-frappe",
   "plantuml.render": "PlantUMLServer",
   "plantuml.server": "http://localhost:8077",
   "markdown-pdf.breaks": true,
-  "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
   "catppuccin.accentColor": "blue",
   "notebook.cellToolbarLocation": {
     "default": "right",
@@ -197,6 +193,38 @@
   "notebook.output.textLineLimit": 100,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  }
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "off"
+  },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "python.languageServer": "Default",
+  "[php]": {
+    "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+  },
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "markdown-preview-enhanced.chromePath": "/sbin/chromium",
+  "markdown-preview-enhanced.codeBlockTheme": "auto.css",
+  "windsurf.completionMode": "off",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "code-runner.runInTerminal": true,
+  "markdown-preview-enhanced.plantumlJarPath": "/usr/share/java/plantuml/plantuml.jar",
+  "windsurf.terminal.cascadeProfile.linux": "managed",
+  "markdown-preview-enhanced.enableTypographer": true,
+  "markdown-preview-enhanced.imageMagickPath": "/sbin/magick",
+  "markdown-preview-enhanced.useGitHubStylePipedLink": true,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true
 }
