@@ -13,7 +13,7 @@ export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 
 export JAVA_HOME="/usr/lib/jvm/default"
 
-export CHROME_EXECUTABLE="/sbin/thorium-browser"
+export CHROME_EXECUTABLE="/sbin/chromium"
 
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 
