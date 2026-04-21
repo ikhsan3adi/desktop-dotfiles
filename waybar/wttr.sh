@@ -5,10 +5,13 @@ latlng="-4.018425024221436,120.78071864110255"
 # url encoded
 location="Sulawesi,%20Indonesia"
 
+url1="https://wttr.in/$latlng?format=%t++%h+H"
+url2="https://wttr.in/$latlng?format=$location:+%C+%c\rTemperature:+%t\rHumidity:+%h"
+
 for i in {1..5}; do
-    text=$(curl -s "https://wttr.in/$latlng?format=%t++%h+H")
+    text=$(curl -s $url1)
     if [ $? -eq 0 ]; then
-        tooltip=$(curl -s "https://wttr.in/$latlng?format=$location:+%C+%c\rTemperature:+%t\rHumidity:+%h")
+        tooltip=$(curl -s $url2)
         if [ $? -eq 0 ]; then
             # extract temperature value
             temperature=$(echo "$text" | grep -oE '[+-]?[0-9]+' | head -n 1)
