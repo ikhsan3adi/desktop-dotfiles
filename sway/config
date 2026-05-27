@@ -54,8 +54,7 @@ font pango:CommitMono Nerd Font Propo Bold 11.7
 exec $scaleS
 
 # wallpaper
-# output * bg ~/Pictures/wallpapers/wallhaven-6l27v6_1920x1080.png fill
-output * bg ~/Pictures/wallpapers/wallhaven-k8k6pm_1920x1080.png fill
+output * bg ~/Pictures/wallpapers/wallpaper_old.png fill
 
 # waybar
 exec $waybarS
@@ -116,6 +115,21 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
+
+# Set workspace 1-5 to primary (eDP-1), 6-10 to secondary
+# workspace 1 output eDP-1
+# workspace 2 output eDP-1
+# workspace 3 output eDP-1
+# workspace 4 output eDP-1
+# workspace 5 output eDP-1
+# workspace 6 output DP-1
+# workspace 7 output DP-1
+# workspace 8 output DP-1
+# workspace 9 output DP-1
+# workspace 10 output DP-1
+
+output DP-1 pos 0 0
+output eDP-1 pos 1600 75
 
 # Switch to workspace
 bindsym $mod+1 workspace number 1
