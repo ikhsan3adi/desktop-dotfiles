@@ -54,7 +54,8 @@ font pango:CommitMono Nerd Font Propo Bold 11.7
 exec $scaleS
 
 # wallpaper
-output * bg ~/Pictures/wallpapers/wallpaper.png fill
+# output * bg ~/Pictures/wallpapers/wallhaven-6l27v6_1920x1080.png fill
+output * bg ~/Pictures/wallpapers/wallhaven-k8k6pm_1920x1080.png fill
 
 # waybar
 exec $waybarS
@@ -127,6 +128,7 @@ bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
+
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
