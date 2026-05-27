@@ -1,7 +1,5 @@
 # [My](https://github.com/ikhsan3adi) Dotfiles
 
-![Preview](preview.png)
-
 My Simple Archlinux Desktop Config Files 🍚
 
 > _Applicable to other distros beside Archlinux aswell_
