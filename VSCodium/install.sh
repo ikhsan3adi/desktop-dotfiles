@@ -13,10 +13,10 @@ ln -s $(pwd)/settings.json ~/.config/Windsurf/User/settings.json
 ln -s $(pwd)/keybindings.json ~/.config/Windsurf/User/keybindings.json
 ln -s $(pwd)/snippets ~/.config/Windsurf/User
 
-# Windsurf Next
-ln -s $(pwd)/settings.json "$HOME/.config/Windsurf - Next/User/settings.json"
-ln -s $(pwd)/keybindings.json "$HOME/.config/Windsurf - Next/User/keybindings.json"
-ln -s $(pwd)/snippets "$HOME/.config/Windsurf - Next/User"
+# Windsurf/Devin Next
+ln -s $(pwd)/settings.json "$HOME/.config/Devin - Next/User/settings.json"
+ln -s $(pwd)/keybindings.json "$HOME/.config/Devin - Next/User/keybindings.json"
+ln -s $(pwd)/snippets "$HOME/.config/Devin - Next/User"
 
 # Cursor
 ln -s $(pwd)/settings.json ~/.config/Cursor/User/settings.json

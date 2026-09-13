@@ -4,3 +4,4 @@ ln -s ~/$SOURCE/extensions ~/.windsurf/extensions
 ln -s ~/$SOURCE/extensions ~/.antigravity-ide/extensions
 ln -s ~/$SOURCE/extensions ~/.cursor/extensions
 ln -s ~/$SOURCE/extensions ~/.vscode/extensions
+ln -s ~/$SOURCE/extensions ~/.devin-next/extensions

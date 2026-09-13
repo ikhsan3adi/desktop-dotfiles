@@ -59,6 +59,9 @@ echo "  updated rofi/colors.rasi"
 sed -i 's/"accent": "p:[^"]*"/"accent": "p:'"$NEW"'"/' "$REPO/oh-my-posh/dydx-frappe.omp.json"
 echo "  updated oh-my-posh/dydx-frappe.omp.json"
 
+sed -i 's/"catppuccin.accentColor": "[^"]*"/"catppuccin.accentColor": "'"$NEW"'"/' "$REPO/VSCodium/settings.json"
+echo "  updated VSCodium/settings.json"
+
 # --- Hardcoded hex values (non-palette files) ---
 
 # mako/config: only active config lines, skip comments

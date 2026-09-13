@@ -23,9 +23,9 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"
   },
-  "extensions.autoUpdate": false,
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+  "extensions.autoUpdate": "off",
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
   "git.enableSmartCommit": true,
   "editor.renderWhitespace": "none",
   "diffEditor.codeLens": true,
@@ -126,7 +126,7 @@
   "files.autoSaveDelay": 15000,
   "terminal.external.linuxExec": "foot",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "window.menuStyle": "custom",
   "window.dialogStyle": "native",
   "window.controlsStyle": "hidden",
@@ -177,7 +177,7 @@
   "plantuml.render": "PlantUMLServer",
   "plantuml.server": "http://localhost:8077",
   "markdown-pdf.breaks": true,
-  "catppuccin.accentColor": "blue",
+  "catppuccin.accentColor": "green",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
@@ -186,7 +186,6 @@
   "jupyter.logKernelOutputSeparately": true,
   "jupyter.disableJupyterAutoStart": true,
   "workbench.activityBar.location": "top",
-  "chat.disableAIFeatures": true,
   "chat.agent.enabled": false,
   "php.validate.executablePath": "/home/dydx/.phpenv/shims/php",
   "php.cache.enableOnlineCache": false,
@@ -218,13 +217,15 @@
   "markdown-preview-enhanced.chromePath": "/sbin/chromium",
   "markdown-preview-enhanced.codeBlockTheme": "auto.css",
   "windsurf.completionMode": "off",
-  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.preferredDarkColorTheme": "Catppuccin Frappé",
+  "workbench.iconTheme": "catppuccin-frappe",
   "code-runner.runInTerminal": true,
   "markdown-preview-enhanced.plantumlJarPath": "/usr/share/java/plantuml/plantuml.jar",
   "windsurf.terminal.cascadeProfile.linux": "managed",
   "markdown-preview-enhanced.enableTypographer": true,
   "markdown-preview-enhanced.imageMagickPath": "/sbin/magick",
   "markdown-preview-enhanced.useGitHubStylePipedLink": true,
-  "markdown-preview-enhanced.enableExtendedTableSyntax": true
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "workbench.sideBar.location": "right",
+  "svelte.enable-ts-plugin": true
 }
