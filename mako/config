@@ -1,6 +1,6 @@
 # mako configuration file
 
-font=CaskaydiaCove Nerd Font Propo 12
+font=RecMonoCasual Nerd Font Propo 12.8
 
 width=480
 
@@ -26,14 +26,14 @@ default-timeout=15000
 
 [urgency=normal]
 text-color=#c6d0f5
-border-color=#8caaee
+border-color=#a6d189
 background-color=#414559c0
 default-timeout=30000
 
 [urgency=high]
 text-color=#303446
-border-color=#e78284
-background-color=#e78284ee
+border-color=#e88284
+background-color=#e88284ee
 default-timeout=0
 
 # color references
@@ -51,6 +51,7 @@ default-timeout=0
 # sapphire #85c1dc
 # blue #8caaee
 # lavender #babbf1
+
 # text #c6d0f5
 # subtext1 #b5bfe2
 # subtext0 #a5adce
