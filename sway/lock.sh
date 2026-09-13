@@ -10,7 +10,7 @@ swaylock \
   --timestr "%H:%M:%S" \
   --datestr "%a, %d %b %Y" \
   \
-  --font "CaskaydiaCove Nerd Font Mono" \
+  --font "RecMonoCasualNerdFontMono-SwaylockBold" \
   \
   --indicator-idle-visible \
   --indicator-radius 180 \
@@ -18,7 +18,7 @@ swaylock \
   \
   --separator-color $transparent \
   \
-  --text-color $text \
+  --text-color $accent \
   --text-clear-color $text \
   --text-caps-lock-color $subtext1 \
   --text-ver-color $subtext1 \
@@ -30,7 +30,7 @@ swaylock \
   --inside-ver-color $transparent \
   --inside-wrong-color $transparent \
   \
-  --key-hl-color $text \
+  --key-hl-color $accent \
   --bs-hl-color $red \
   --caps-lock-key-hl-color $text \
   --caps-lock-bs-hl-color $red \
