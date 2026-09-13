@@ -61,6 +61,11 @@
       "folders": "/"
     },
     {
+      "key": "{$2}{icon} Disk (/var)  > ",
+      "type": "disk",
+      "folders": "/var"
+    },
+    {
       "key": "{$2}{icon} Disk (/home) > ",
       "type": "disk",
       "folders": "/home"
