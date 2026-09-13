@@ -3,6 +3,7 @@
     "position": "bottom",
     "output": [
         "eDP-1"
+        //, "DP-1"
     ],
     "height": 26,
     "spacing": 0,
@@ -15,6 +16,7 @@
         "sway/mode",
         "sway/scratchpad",
         "tray",
+        // "custom/weather",
         "mpris"
     ],
     "modules-center": [
@@ -38,7 +40,6 @@
             "network",
             "bluetooth",
             "pulseaudio"
-            // , "custom/weather"
         ]
     },
     "group/hardware": {
@@ -133,7 +134,7 @@
             "paused": "▶",
             "stopped": "⏹"
         },
-        "dynamic-len": 64
+        "dynamic-len": 36
         // "ignored-players": ["cmus"]
     },
     "tray": {
