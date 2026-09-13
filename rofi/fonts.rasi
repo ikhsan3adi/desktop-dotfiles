@@ -1,7 +1,7 @@
 * {
-    font: "DM Sans 12";
+    font: "RobotoCondensed 13.67";
 }
 
 prompt, entry {
-    font: "CaskaydiaCove Nerd Font 12";
+    font: "RecMonoCasual Nerd Font 13";
 }
