@@ -65,7 +65,7 @@
             "folder_separator_icon": "/",
             "right_format": "<b><i><p:accent>%s</></i></b>",
             "home_icon": "~",
-            "style": "powerlevel",
+            "style": "folder",
             "max_width": 32
           },
           "template": " {{ .Path }} ",
