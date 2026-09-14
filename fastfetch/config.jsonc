@@ -71,6 +71,11 @@
       "folders": "/home"
     },
     {
+      "key": "{$2}{icon} Disk (D:)    > ",
+      "type": "disk",
+      "folders": "D:\\"
+    },
+    {
       "format": "{#1}{#keys}├{$1}┤",
       "type": "custom"
     },
