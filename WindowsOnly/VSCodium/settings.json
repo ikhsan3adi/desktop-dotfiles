@@ -5,7 +5,7 @@
   "problems.showCurrentInStatus": true,
   "editor.wordWrap": "on",
   "editor.fontLigatures": "true",
-  "editor.fontFamily": "\"JetBrainsMono Nerd Font Mono\", \"Font Awesome\", monospace",
+  "editor.fontFamily":  "\"CaskaydiaCove Nerd Font\", \"JetBrainsMono Nerd Font Mono\", \"Font Awesome\", monospace",
   "editor.linkedEditing": true,
   "explorer.confirmDragAndDrop": false,
   "liveServer.settings.CustomBrowser": "microsoft-edge",
@@ -30,15 +30,15 @@
   },
   "extensions.autoUpdate": false,
   "update.mode": "manual",
-  "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
   "git.enableSmartCommit": true,
   "editor.renderWhitespace": "none",
   "dart.debugExternalPackageLibraries": false,
   "dart.debugSdkLibraries": false,
   "dart.showInspectorNotificationsForWidgetErrors": false,
   "diffEditor.codeLens": true,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "task.problemMatchers.neverPrompt": {
     "shell": true
   },
@@ -137,7 +137,7 @@
   "dart.renameFilesWithClasses": "prompt",
   "dart.flutterHotReloadOnSave": "manualIfDirty",
   "dart.env": {
-    "CHROME_EXECUTABLE": "thorium-browser",
+    // "CHROME_EXECUTABLE": "thorium-browser",
   },
   "workbench.tree.indent": 12,
   "[handlebars]": {
@@ -303,8 +303,6 @@
       "terminal.ansiBlack": "base"
     }
   },
-  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha",
   "cmake.showOptionsMovedNotification": false,
   "telemetry.feedback.enabled": false,
   "git-graph.maxDepthOfRepoSearch": 2,
@@ -324,9 +322,7 @@
     "markdown": true,
     "scminput": false
   },
-  "editor.formatOnSave": true,
   "terminal.integrated.fontWeight": "500",
-  "editor.fontSize": 13,
   "window.dialogStyle": "custom",
   "window.menuStyle": "custom",
   "window.controlsStyle": "custom",
@@ -334,5 +330,9 @@
   "editor.renderLineHighlight": "gutter",
   "zenMode.hideLineNumbers": false,
   "search.showLineNumbers": true,
-  "editor.fontVariations": true
+  "editor.fontVariations": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.formatOnSave": false,
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-frappe"
 }
